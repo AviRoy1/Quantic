@@ -1,0 +1,397 @@
+import React, { useEffect, useState } from "react";
+import ReactApexChart from "react-apexcharts";
+import dummyData from "../data.json";
+import { Box, Grid, Paper, Typography } from "@mui/material";
+import { ArrowDownward, ArrowUpward } from "@mui/icons-material";
+import waiting from "../Icons/WATINTG-01.svg";
+import totalpax from "../Icons/TOTAL TAX--01.svg";
+const LineChartComp = ({ index }) => {
+  let arr = [];
+  let arr2 = [];
+
+  const [prv, setPrv] = useState(
+    index === "D1Q1"
+      ? dummyData.Entrance.D1Q1.pax_prev
+      : index === "D1Q2"
+      ? dummyData.Entrance.D1Q2.pax_prev
+      : index === "D2Q2"
+      ? dummyData.Entrance.D2Q1.pax_prev
+      : dummyData.Entrance.D2Q2.pax_prev
+  );
+  const [maxpax, setMaxpax] = useState(
+    index === "D1Q1"
+      ? dummyData.Entrance.D1Q1.Total_pax
+      : index === "D1Q2"
+      ? dummyData.Entrance.D1Q2.Total_pax
+      : index === "D2Q2"
+      ? dummyData.Entrance.D2Q1.Total_pax
+      : dummyData.Entrance.D2Q2.Total_pax
+  );
+  const [curAWT, setcurAWT] = useState(
+    index === "D1Q1"
+      ? dummyData.Entrance.D1Q1.Total_awt
+      : index === "D1Q2"
+      ? dummyData.Entrance.D1Q2.Total_awt
+      : index === "D2Q2"
+      ? dummyData.Entrance.D2Q1.Total_awt
+      : dummyData.Entrance.D2Q2.Total_awt
+  );
+  const [prvAWT, setprvAWT] = useState(
+    index === "D1Q1"
+      ? dummyData.Entrance.D1Q1.awt_prev
+      : index === "D1Q2"
+      ? dummyData.Entrance.D1Q2.awt_prev
+      : index === "D2Q2"
+      ? dummyData.Entrance.D2Q1.awt_prev
+      : dummyData.Entrance.D2Q2.awt_prev
+  );
+
+  useEffect(() => {
+    setPrv(
+      index === "D1Q1"
+        ? dummyData.Entrance.D1Q1.pax_prev
+        : index === "D1Q2"
+        ? dummyData.Entrance.D1Q2.pax_prev
+        : index === "D2Q2"
+        ? dummyData.Entrance.D2Q1.pax_prev
+        : dummyData.Entrance.D2Q2.pax_prev
+    );
+    setMaxpax(
+      index === "D1Q1"
+        ? dummyData.Entrance.D1Q1.Total_pax
+        : index === "D1Q2"
+        ? dummyData.Entrance.D1Q2.Total_pax
+        : index === "D2Q2"
+        ? dummyData.Entrance.D2Q1.Total_pax
+        : dummyData.Entrance.D2Q2.Total_pax
+    );
+    setcurAWT(
+      index === "D1Q1"
+        ? dummyData.Entrance.D1Q1.Total_awt
+        : index === "D1Q2"
+        ? dummyData.Entrance.D1Q2.Total_awt
+        : index === "D2Q2"
+        ? dummyData.Entrance.D2Q1.Total_awt
+        : dummyData.Entrance.D2Q2.Total_awt
+    );
+    setprvAWT(
+      index === "D1Q1"
+        ? dummyData.Entrance.D1Q1.awt_prev
+        : index === "D1Q2"
+        ? dummyData.Entrance.D1Q2.awt_prev
+        : index === "D2Q2"
+        ? dummyData.Entrance.D2Q1.awt_prev
+        : dummyData.Entrance.D2Q2.awt_prev
+    );
+  });
+
+  const data = Object.values(dummyData.Entrance.Heatmap).map((item, index) => {
+    arr.push(item.Pax);
+    // let c = "am";
+    // if (index >= 12) c = "pm";
+    arr2.push(index + "-" + (index + 1));
+  });
+
+  const maxPeakIndex = arr.indexOf(Math.max(...arr));
+
+  const series = [
+    {
+      name: "PAX (1x100)/hr",
+      data: arr,
+      markers: {
+        size: 4,
+        colors: "#e74c3c",
+        strokeColors: "#fff",
+        strokeWidth: 2,
+        hover: {
+          size: 6,
+        },
+      },
+    },
+  ];
+
+  const options = {
+    chart: {
+      height: 350,
+      type: "line",
+      zoom: {
+        enabled: false,
+      },
+    },
+    dataLabels: {
+      enabled: false,
+    },
+    stroke: {
+      curve: "straight",
+      colors: ["#153f7b"],
+      width: 2,
+    },
+    annotations: {
+      points: [
+        {
+          x: arr2[maxPeakIndex],
+          y: arr[maxPeakIndex],
+          marker: {
+            size: 6,
+            fillColor: "#e74c3c",
+            strokeColor: "#fff",
+            strokeWidth: 2,
+            shape: "circle",
+          },
+          label: {
+            borderColor: "#e74c3c",
+            style: {
+              fontSize: "12px",
+              color: "#fff",
+              background: "#e74c3c",
+            },
+            text: "Max Peak",
+          },
+        },
+      ],
+    },
+    title: {
+      text: "Hourly Passenger Entry",
+      align: "left",
+      style: {
+        fontSize: "18px",
+        fontWeight: "bold",
+      },
+    },
+    grid: {
+      row: {
+        colors: ["#f3f3f3", "transparent"],
+        opacity: 0.5,
+      },
+    },
+    xaxis: {
+      categories: arr2,
+      title: {
+        text: "Time",
+        style: {
+          fontSize: "14px",
+          fontWeight: "bold",
+        },
+      },
+    },
+    yaxis: {
+      title: {
+        text: "PAX (1x100)/hr",
+        style: {
+          fontSize: "14px",
+          fontWeight: "bold",
+        },
+      },
+    },
+    fill: {
+      colors: ["white"],
+    },
+  };
+
+  const chartHeight = 250;
+  const boxHeight = 60;
+
+  return (
+    <>
+      <div style={{ display: "flex", justifyContent: "space-between" }}>
+        <div style={{ flex: 2 }}>
+          <div id="chart" style={{ background: "white", marginLeft: "10px" }}>
+            <ReactApexChart
+              options={options}
+              series={series}
+              type="line"
+              height={chartHeight}
+              width={1055}
+            />
+          </div>
+        </div>
+        <div
+          style={{
+            flex: 1,
+            marginLeft: "20px",
+            display: "flex",
+            flexDirection: "column",
+            alignContent: "flex-end",
+          }}
+        >
+          <Box
+            component={Paper}
+            p={4}
+            borderRadius="md"
+            style={{
+              width: "95%",
+              maxWidth: "95%",
+              // marginBottom: "20px",
+              height: boxHeight,
+              display: "flex",
+              flexDirection: "column",
+            }}
+          >
+            <div
+              style={{
+                width: "100%",
+                backgroundColor: "#153f7b",
+                textAlign: "center",
+              }}
+            >
+              <Typography
+                // variant="h6"
+                color="primary"
+                mt={-3}
+                style={{
+                  color: "white",
+                  backgroundColor: "#153f7b",
+                  borderRadius: "10px",
+                  fontSize: "22px",
+                }}
+              >
+                Total Pax
+              </Typography>
+            </div>
+            <Grid container alignItems="center" marginTop={"10px"}>
+              <Grid item xs={5}>
+                {(((maxpax - prv) / maxpax) * 100).toFixed(2) > 0 ? (
+                  <Typography ml={1} color="green">
+                    <Typography variant="h5">{maxpax}</Typography>
+                  </Typography>
+                ) : (
+                  <Typography ml={1} color="red">
+                    <Typography variant="h5">{maxpax}</Typography>
+                  </Typography>
+                )}
+
+                <Typography variant="subtitle2" style={{ marginBottom: "8px" }}>
+                  vs prev = {prv}
+                </Typography>
+              </Grid>
+              <Grid item xs={5}>
+                <Box display="flex" alignItems="center">
+                  {(((maxpax - prv) / maxpax) * 100).toFixed(2) > 0 ? (
+                    <ArrowUpward color="success" />
+                  ) : (
+                    <ArrowDownward color="error" />
+                  )}
+
+                  {(((maxpax - prv) / maxpax) * 100).toFixed(2) > 0 ? (
+                    <Typography ml={1} color="green" variant="h7">
+                      {(((maxpax - prv) / maxpax) * 100).toFixed(2)}%
+                    </Typography>
+                  ) : (
+                    <Typography ml={1} variant="h7" color="red">
+                      {(((maxpax - prv) / maxpax) * 100).toFixed(2)}%
+                    </Typography>
+                  )}
+                </Box>
+              </Grid>
+              <Grid item xs={2}>
+                {" "}
+                <Box display="flex" alignItems="flex-start" marginTop={"-5px"}>
+                  <img
+                    src={totalpax}
+                    alt="Icon"
+                    style={{
+                      color: "blue",
+                      width: "75px",
+                      height: "75px",
+                      marginTop: "-5px",
+                      marginRight: "-25px",
+                    }}
+                  />
+                  {/* <totalpax width={32} height={32} /> */}
+                </Box>
+              </Grid>
+            </Grid>
+          </Box>
+          <Box
+            component={Paper}
+            p={4}
+            borderRadius="md"
+            style={{
+              width: "95%",
+              maxWidth: "95%",
+              marginTop: "10px",
+              height: boxHeight,
+              display: "flex",
+              flexDirection: "column",
+            }}
+          >
+            <div
+              style={{
+                width: "100%",
+                backgroundColor: "#153f7b",
+                textAlign: "center",
+              }}
+            >
+              <Typography
+                // variant="h6"
+                color="primary"
+                mt={-3}
+                style={{
+                  color: "white",
+                  backgroundColor: "#153f7b",
+                  borderRadius: "10px",
+                  fontSize: "22px",
+                }}
+              >
+                Avg Waiting Time
+              </Typography>
+            </div>
+            <Grid container alignItems="center" marginTop={"10px"}>
+              <Grid item xs={5}>
+                {(((curAWT - prvAWT) / curAWT) * 100).toFixed(2) < 0 ? (
+                  <Typography variant="h5" color="red">
+                    {curAWT}mins
+                  </Typography>
+                ) : (
+                  <Typography variant="h5" color="green">
+                    {curAWT}mins
+                  </Typography>
+                )}
+
+                <Typography variant="subtitle2" style={{ marginBottom: "8px" }}>
+                  vs prev = {prvAWT}
+                </Typography>
+              </Grid>
+              <Grid item xs={5}>
+                <Box display="flex" alignItems="center">
+                  {(((curAWT - prvAWT) / curAWT) * 100).toFixed(2) > 0 ? (
+                    <ArrowUpward color="success" />
+                  ) : (
+                    <ArrowDownward color="error" />
+                  )}
+
+                  {(((curAWT - prvAWT) / curAWT) * 100).toFixed(2) < 0 ? (
+                    <Typography variant="h7" color="red">
+                      {(((curAWT - prvAWT) / curAWT) * 100).toFixed(2)}
+                    </Typography>
+                  ) : (
+                    <Typography variant="h7" color="green">
+                      {(((curAWT - prvAWT) / curAWT) * 100).toFixed(2)}
+                    </Typography>
+                  )}
+                </Box>
+              </Grid>
+              <Grid item xs={2}>
+                {" "}
+                <Box display="flex" alignItems="flex-start" marginTop={"-5px"}>
+                  <img
+                    src={waiting}
+                    alt="Icon"
+                    style={{
+                      color: "blue",
+                      width: "75px",
+                      height: "75px",
+                      marginTop: "-5px",
+                      marginRight: "-25px",
+                    }}
+                  />
+                </Box>
+              </Grid>
+            </Grid>
+          </Box>
+        </div>
+      </div>
+    </>
+  );
+};
+export default LineChartComp;
