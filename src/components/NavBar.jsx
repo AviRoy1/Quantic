@@ -53,6 +53,10 @@ const Navbar = () => {
     setOpenDrawer(open);
   };
 
+  const onClickHandler = () => {
+    navigate("/");
+  };
+
   const list = () => (
     <div
       role="presentation"
@@ -228,6 +232,7 @@ const Navbar = () => {
       >
         <Typography
           variant="h6"
+          onClick={() => onClickHandler()}
           gutterBottom
           style={{
             marginLeft: "10px",
