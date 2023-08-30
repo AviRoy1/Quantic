@@ -127,6 +127,9 @@ const HeatmapComponent = () => {
                 fontFamily: "bold",
                 marginTop: "3px",
                 marginLeft: "10px",
+                alignItems: "center",
+                textAlign: "left",
+                verticalAlign: "middle",
               }}
             >
               Passenger Queue Heatmap

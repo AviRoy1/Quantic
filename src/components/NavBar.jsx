@@ -142,6 +142,9 @@ const Navbar = () => {
             marginLeft: "10px",
             marginRight: "10px",
             marginTop: "120px",
+            alignItems: "center",
+            textAlign: "left",
+            verticalAlign: "middle",
           }}
         >
           <Typography
@@ -150,9 +153,13 @@ const Navbar = () => {
             style={{
               marginLeft: "10px",
               color: "white",
-              fontFamily: "bold",
+              fontWeight: "bold",
+              fontSize: "18px",
               marginTop: "3px",
               marginRight: "10px",
+              alignItems: "center",
+              textAlign: "left",
+              verticalAlign: "middle",
             }}
           >
             {selectedItem !== "SHA" ? "Security Status" : "Frisks"}
