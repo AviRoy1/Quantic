@@ -35,12 +35,12 @@ const BarChart = ({ index }) => {
     const updateChartData = () => {
       const selectedData =
         index === "D1Q1"
-          ? dummyData.Entrance.D1Q1
+          ? dummyData.SHA.D1Q1
           : index === "D1Q2"
-          ? dummyData.Entrance.D1Q2
+          ? dummyData.SHA.D1Q2
           : index === "D2Q1"
-          ? dummyData.Entrance.D2Q1
-          : dummyData.Entrance.D2Q2;
+          ? dummyData.SHA.D2Q1
+          : dummyData.SHA.D2Q2;
       const seriesData = [
         selectedData["<5mins"],
         selectedData["<10mins"],
@@ -63,7 +63,8 @@ const BarChart = ({ index }) => {
         mb="4"
         mt="10"
         ml="17px"
-        color={"#153f7b"}>
+        color={"#153f7b"}
+      >
         Avg Waiting Time
       </Typography>
       <ReactApexChart

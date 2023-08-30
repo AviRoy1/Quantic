@@ -23,6 +23,9 @@ import psha from "../Icons/PSHA-011.svg";
 import sha from "../Icons/SHA-01.svg";
 import AccessibilityNewIcon from "@mui/icons-material/AccessibilityNew";
 import CircleIcon from "@mui/icons-material/Circle";
+import MainContainer from "./MainContainer";
+import Psha from "../pages/PSHA/MainContainer";
+import Sha from "../pages/SHA/MainContainer";
 
 const Navbar = () => {
   const [anchorEl, setAnchorEl] = useState(null);
@@ -35,11 +38,15 @@ const Navbar = () => {
   const navigate = useNavigate();
   const handleClose = () => {
     // setAnchorEl(null);
-    navigate("/");
+    // navigate("/");
   };
-  const handleItemClick = (text) => () => {
+  const handleItemClick = (text) => {
     setSelectedItem(text);
     setOpenDrawer(false);
+  };
+  const helper = (text) => {
+    console.log(text);
+    setSelectedItem(text);
   };
 
   const toggleDrawer = (open) => (event) => {
@@ -53,68 +60,69 @@ const Navbar = () => {
     setOpenDrawer(open);
   };
 
-  const onClickHandler = () => {
-    navigate("/");
-  };
-
+  // const onClickHandler = () => {
+  //   navigate("/");
+  // };
+  console.log(selectedItem);
   const list = () => (
     <div
       role="presentation"
       onClick={toggleDrawer(false)}
       onKeyDown={toggleDrawer(false)}
       sx={{
-        width: 300, // Adjust the width value
+        width: 300,
         borderRight: "1px solid #ccc",
         height: "100%",
         display: "flex",
         flexDirection: "column",
       }}
     >
-      <List sx={{ flexGrow: 1, minWidth: "100%", width: "100%" }}>
+      <List sx={{ flexGrow: 1, width: "100%" }}>
         {["Entry-Gate", "PSHA", "SHA"].map((text) => (
           <ListItem
             button
             key={text}
-            onClick={handleItemClick(text)}
+            onClick={() => handleItemClick(text)}
             sx={{
               backgroundColor: selectedItem === text ? "#153f7d" : "white",
               display: "flex",
               alignItems: "center",
-              width: "100%",
-              color: selectedItem === text ? "white" : "black", // Set text color based on selection
+              color: selectedItem === text ? "white" : "black",
             }}
           >
-            <Link
+            {/* <Link
               to={`/${text}`}
-              onClick={() => handleItemClick(text)}
+              onClick={() => {
+                helper(text);
+              }}
               style={{
                 textDecoration: "none",
                 display: "flex",
                 alignItems: "center",
                 width: "100%",
               }}
-            >
-              {text === "Entry-Gate" ? (
-                <img
-                  src={entryGgate}
-                  alt="icon"
-                  style={{ width: "50px", height: "50px" }}
-                />
-              ) : text === "PSHA" ? (
-                <img
-                  src={psha}
-                  alt="icon"
-                  style={{ width: "40px", height: "40px" }}
-                />
-              ) : (
-                <img
-                  src={sha}
-                  alt="icon"
-                  style={{ width: "40px", height: "40px" }}
-                />
-              )}
-              <ListItemText primary={text} sx={{ marginLeft: "10px" }} />
-            </Link>
+            > */}
+            {text === "Entry-Gate" ? (
+              <img
+                src={entryGgate}
+                alt="icon"
+                style={{ width: "50px", height: "50px" }}
+              />
+            ) : text === "PSHA" ? (
+              <img
+                src={psha}
+                alt="icon"
+                style={{ width: "40px", height: "40px", marginLeft: "10px" }}
+              />
+            ) : (
+              <img
+                src={sha}
+                alt="icon"
+                style={{ width: "40px", height: "40px", marginLeft: "10px" }}
+              />
+            )}
+            <ListItemText primary={text} sx={{ marginLeft: "10px" }} />
+            {/* </Link> */}
           </ListItem>
         ))}
 
@@ -232,7 +240,7 @@ const Navbar = () => {
       >
         <Typography
           variant="h6"
-          onClick={() => onClickHandler()}
+          // onClick={() => onClickHandler()}
           gutterBottom
           style={{
             marginLeft: "10px",
@@ -268,6 +276,8 @@ const Navbar = () => {
                 color: "#153f7d",
                 fontWeight: "bolder",
                 fontSize: "25px",
+                textAlign: "center",
+                flexGrow: 1,
               }}
             >
               QUANTIC
@@ -320,6 +330,13 @@ const Navbar = () => {
       >
         {list()}
       </Drawer>
+      {selectedItem === "Entry-Gate" ? (
+        <MainContainer />
+      ) : selectedItem === "PSHA" ? (
+        <Psha />
+      ) : (
+        <Sha />
+      )}
     </div>
   );
 };

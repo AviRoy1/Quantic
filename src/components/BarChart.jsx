@@ -54,9 +54,11 @@ const BarChart = ({ index }) => {
 
     updateChartData();
   }, [index]);
-
   return (
-    <div id="chart" style={{ width: "35%", background: "white" }}>
+    <div
+      id="chart"
+      style={{ width: "35%", background: "white", marginTop: "5px" }}
+    >
       <Typography
         // variant="h5"
         fontSize={"22px"}

@@ -211,17 +211,6 @@ const HeatmapComponent = () => {
         >
           <HeatMapGrid
             data={data}
-            // xLabels={xLabels.map((xLabel) => (
-            //   <div key={xLabel.label}>
-            //     {xLabel.icon}
-            //     <Typography
-            //       variant="caption"
-            //       style={{ color: "#153f7b", textAlign: "center" }}
-            //     >
-            //       {xLabel.label}
-            //     </Typography>
-            //   </div>
-            // ))}
             yLabels={yLabels}
             cellRender={(x, y, value) => (
               <div title={`Pos(${x}, ${y}) = ${value}`}>{value}</div>

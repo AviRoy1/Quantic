@@ -35,12 +35,12 @@ const BarChart = ({ index }) => {
     const updateChartData = () => {
       const selectedData =
         index === "D1Q1"
-          ? dummyData.Entrance.D1Q1
+          ? dummyData.PSHA.D1Q1
           : index === "D1Q2"
-          ? dummyData.Entrance.D1Q2
+          ? dummyData.PSHA.D1Q2
           : index === "D2Q1"
-          ? dummyData.Entrance.D2Q1
-          : dummyData.Entrance.D2Q2;
+          ? dummyData.PSHA.D2Q1
+          : dummyData.PSHA.D2Q2;
       const seriesData = [
         selectedData["<5mins"],
         selectedData["<10mins"],
@@ -56,7 +56,10 @@ const BarChart = ({ index }) => {
   }, [index]);
 
   return (
-    <div id="chart" style={{ width: "35%", background: "white" }}>
+    <div
+      id="chart"
+      style={{ width: "35%", background: "white", marginTop: "5px" }}
+    >
       <Typography
         // variant="h5"
         fontSize={"22px"}

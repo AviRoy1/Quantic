@@ -85,13 +85,12 @@ const LineChartComp = ({ index }) => {
     );
   });
 
-  const data = Object.values(dummyData.Entrance.Heatmap).map((item, index) => {
+  const data = Object.values(dummyData.PSHA.Heatmap).map((item, index) => {
     arr.push(item.Pax);
     // let c = "am";
     // if (index >= 12) c = "pm";
     arr2.push(index + "-" + (index + 1));
   });
-
   const maxPeakIndex = arr.indexOf(Math.max(...arr));
 
   const series = [
@@ -154,7 +153,8 @@ const LineChartComp = ({ index }) => {
       text: "Hourly Passenger Entry",
       align: "left",
       style: {
-        fontSize: "18px",
+        fontSize: "21px",
+        color: "#153f7b",
         fontWeight: "bold",
       },
     },
@@ -193,25 +193,43 @@ const LineChartComp = ({ index }) => {
 
   return (
     <>
-      <div style={{ display: "flex", justifyContent: "space-between" }}>
-        <div style={{ flex: 2 }}>
-          <div id="chart" style={{ background: "white", marginLeft: "10px" }}>
+      <div
+        className="mainDivContainer"
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          marginLeft: "10px",
+          height: "100%",
+          width: "100%",
+        }}
+      >
+        <div
+          style={{
+            flex: "2 1 59%",
+            minWidth: "59%",
+            marginLeft: "-10px",
+            // marginRight: "20px",
+          }}
+        >
+          <div id="chart" style={{ background: "white", height: "100%" }}>
             <ReactApexChart
               options={options}
               series={series}
               type="line"
-              height={chartHeight}
-              width={1055}
+              height={"100%"}
+              width="100%"
             />
           </div>
         </div>
         <div
           style={{
-            flex: 1,
-            marginLeft: "20px",
+            flex: "1 1 17%",
+            marginLeft: "10px",
             display: "flex",
             flexDirection: "column",
             alignContent: "flex-end",
+            height: "100%",
+            width: "100%",
           }}
         >
           <Box
@@ -219,10 +237,7 @@ const LineChartComp = ({ index }) => {
             p={4}
             borderRadius="md"
             style={{
-              width: "95%",
-              maxWidth: "95%",
-              // marginBottom: "20px",
-              height: boxHeight,
+              height: "50%",
               display: "flex",
               flexDirection: "column",
             }}
@@ -230,19 +245,19 @@ const LineChartComp = ({ index }) => {
             <div
               style={{
                 width: "100%",
+
                 backgroundColor: "#153f7b",
                 textAlign: "center",
               }}
             >
               <Typography
-                // variant="h6"
+                variant="h6"
                 color="primary"
                 mt={-3}
                 style={{
                   color: "white",
                   backgroundColor: "#153f7b",
-                  borderRadius: "10px",
-                  fontSize: "22px",
+                  // borderRadius: "10px",
                 }}
               >
                 Total Pax
@@ -307,10 +322,10 @@ const LineChartComp = ({ index }) => {
             p={4}
             borderRadius="md"
             style={{
-              width: "95%",
-              maxWidth: "95%",
+              // width: "95%",
+              // maxWidth: "95%",
               marginTop: "10px",
-              height: boxHeight,
+              height: "50%",
               display: "flex",
               flexDirection: "column",
             }}
@@ -323,14 +338,13 @@ const LineChartComp = ({ index }) => {
               }}
             >
               <Typography
-                // variant="h6"
+                variant="h6"
                 color="primary"
                 mt={-3}
                 style={{
                   color: "white",
                   backgroundColor: "#153f7b",
-                  borderRadius: "10px",
-                  fontSize: "22px",
+                  // borderRadius: "10px",
                 }}
               >
                 Avg Waiting Time

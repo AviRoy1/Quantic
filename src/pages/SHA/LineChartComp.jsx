@@ -15,7 +15,7 @@ const LineChartComp = ({ index }) => {
       arr.push(item.Pax);
       // let c = "am";
       // if (index >= 12) c = "pm";
-      arr2.push(index + "-" + (index + 1));
+      arr2.push(index + "-" + (index + 1) + " " + "hr");
     }
   );
   const maxPeakIndex = arr.indexOf(Math.max(...arr));
@@ -80,7 +80,8 @@ const LineChartComp = ({ index }) => {
       text: "Hourly Passenger Entry",
       align: "left",
       style: {
-        fontSize: "18px",
+        fontSize: "21px",
+        color: "#153f7b",
         fontWeight: "bold",
       },
     },

@@ -1,6 +1,6 @@
 import React from "react";
 import { HeatMapGrid } from "react-grid-heatmap";
-import { Box, Typography } from "@mui/material";
+import { Box, Grid, Paper, Typography } from "@mui/material";
 import jsonData from "../data.json";
 import { MdOutlineRadioButtonChecked } from "react-icons/md";
 import AccessibilityIcon from "@mui/icons-material/Accessibility";
@@ -124,45 +124,43 @@ const HeatmapComponent = () => {
     <div
       style={{
         display: "flex",
-        flexDirection: "row",
-        marginTop: "17px",
-        width: "100%",
-        alignItems: "start",
-        maxHeight: "290px",
+        justifyContent: "space-between",
         marginLeft: "10px",
-        marginRight: "10px",
+        height: "100%",
+        width: "100%",
       }}
     >
       <div
         style={{
-          display: "flex",
-          width: "80%",
-          flexDirection: "column",
-          marginLeft: "20px",
+          flex: "2 1 59%",
+          minWidth: "59%",
+          // marginLeft: "20px",
           backgroundColor: "white",
         }}
       >
         <div
           style={{
-            width: "98%",
+            // width: "100%",
             backgroundColor: "#153f7b",
             borderRadius: "10px",
             justifyContent: "start",
             marginLeft: "10px",
+            marginRight: "10px",
+            marginTop: "10px",
           }}
         >
-          <Typography
-            variant="h6"
-            gutterBottom
-            style={{
-              marginLeft: "10px",
-              color: "white",
-              fontFamily: "bold",
-              marginTop: "3px",
-              fontSize: "22px",
-            }}
-          >
-            Passenger Queue Heatmap
+          <Typography variant="h5" gutterBottom style={{ marginLeft: "10px" }}>
+            <Typography
+              variant="h6"
+              style={{
+                color: "white",
+                fontFamily: "bold",
+                marginTop: "3px",
+                marginLeft: "10px",
+              }}
+            >
+              Passenger Queue Heatmap
+            </Typography>
           </Typography>
         </div>
         <div
@@ -171,9 +169,10 @@ const HeatmapComponent = () => {
             flexDirection: "row",
             margin: "3px 0",
             justifyContent: "space-between",
+            alignContent: "center",
             alignItems: "center",
-            marginLeft: "120px",
-            marginRight: "120px",
+            marginLeft: "50px",
+            width: "100%",
           }}
         >
           {xLabels.map((xLabel) => (
@@ -185,6 +184,7 @@ const HeatmapComponent = () => {
                 alignItems: "center",
                 width: "70px",
                 padding: "5px 0",
+                flexGrow: 1,
               }}
             >
               {xLabel.icon}
@@ -199,10 +199,10 @@ const HeatmapComponent = () => {
         </div>
         <div
           style={{
-            width: "98%",
+            width: "100%",
             height: "134px",
             fontFamily: "sans-serif",
-            marginLeft: "10px",
+            // marginLeft: "10px",
             marginRight: "auto",
             marginTop: "14px",
             overflowY: "auto",
@@ -211,16 +211,6 @@ const HeatmapComponent = () => {
         >
           <HeatMapGrid
             data={data}
-            // xLabels={xLabels.map((xLabel) => (
-            //   <div key={xLabel.label}>
-            //     <Typography
-            //       variant="caption"
-            //       style={{ color: "#153f7b", textAlign: "center" }}
-            //     >
-            //       {xLabel.label}
-            //     </Typography>
-            //   </div>
-            // ))}
             yLabels={yLabels}
             cellRender={(x, y, value) => (
               <div title={`Pos(${x}, ${y}) = ${value}`}>{value}</div>
@@ -260,133 +250,154 @@ const HeatmapComponent = () => {
           />
         </div>
       </div>
+
       <div
         style={{
-          width: "25%",
-          height: "250px",
-          fontFamily: "sans-serif",
-          marginLeft: "30px",
-          backgroundColor: "white",
+          flex: "1 1 17%",
+          marginLeft: "10px",
           display: "flex",
           flexDirection: "column",
+          alignContent: "flex-end",
+          height: "100%",
+          width: "100%",
         }}
       >
-        <div
+        <Box
+          component={Paper}
+          p={4}
+          borderRadius="md"
           style={{
-            width: "95%",
-            backgroundColor: "#153f7b",
-            marginLeft: "5px",
-            borderRadius: "10px",
-            justifyContent: "start",
-            marginTop: "7px",
-            alignContent: "center",
-            alignItems: "center",
+            height: "100%",
+            display: "flex",
+            // width:"100%",
+            flexDirection: "column",
           }}
         >
-          <Typography variant="h6" gutterBottom style={{ marginLeft: "10px" }}>
+          <div
+            style={{
+              width: "100%",
+
+              backgroundColor: "#153f7b",
+              textAlign: "center",
+            }}
+          >
             <Typography
-              // variant="h6"
+              variant="h6"
+              color="primary"
+              mt={-3}
               style={{
                 color: "white",
-                fontFamily: "bold",
-                marginTop: "3px",
-                marginLeft: "20px",
-                fontSize: "22px",
+                backgroundColor: "#153f7b",
+                // borderRadius: "10px",
               }}
             >
               Gate Status
             </Typography>
-          </Typography>
-        </div>
-        <Box
-          style={{
-            marginLeft: "30px",
-            marginRight: "30px",
-          }}
-        >
-          <Typography variant="h5" gutterBottom style={{ marginLeft: "10px" }}>
-            <Typography
-              variant="h5"
-              style={{
-                width: "95%",
-                backgroundColor: "#58C55F",
-                marginLeft: "5px",
-                justifyContent: "center",
-                marginTop: "18px",
-                height: "50px",
-                alignItems: "center",
-                display: "flex",
-                color: "white",
-              }}
-            >
-              {d1GateStatus >= d2GateStatus ? "D1" : "D2"}
-            </Typography>
-          </Typography>
-        </Box>
-        <Box
-          style={{
-            marginLeft: "30px",
-            marginRight: "30px",
-          }}
-        >
-          <Typography variant="h5" gutterBottom style={{ marginLeft: "10px" }}>
-            <Typography
-              variant="h5"
-              style={{
-                width: "95%",
-                backgroundColor: "#F9A81B",
-                marginLeft: "5px",
-                justifyContent: "center",
-                marginTop: "18px",
-                height: "50px",
-                alignItems: "center",
-                display: "flex",
-                color: "white",
-              }}
-            >
-              {d1GateStatus < d2GateStatus ? "D1" : "D2"}
-            </Typography>
-          </Typography>
-        </Box>
-
-        <Box
-          style={{
-            marginLeft: "30px",
-            marginRight: "30px",
-            display: "flex",
-            alignItems: "center",
-            marginTop: "20px",
-          }}
-        >
-          <Typography
-            gutterBottom
-            variant="h8"
-            style={{ display: "flex", alignItems: "center" }}
+          </div>
+          <Grid
+            container
+            alignItems="center"
+            marginTop={"10px"}
+            display={"flex"}
+            flexDirection={"column"}
           >
-            <MdOutlineRadioButtonChecked
-              style={{ height: "20px", width: "20px", color: "#58C55F" }}
-            />
-            <Typography
-              variant="h8"
-              style={{ fontWeight: "bold", marginLeft: "5px" }}
-            >
-              Low Traffic
-            </Typography>
-            <MdOutlineRadioButtonChecked
+            <Box
               style={{
-                height: "20px",
-                width: "20px",
-                color: "#F9A81B",
-                marginLeft: "10px",
+                width: "100%",
+                // marginLeft: "30px",
+                // marginRight: "30px",
               }}
-            />
-            <Typography
-              variant="h8"
-              style={{ fontWeight: "bold", marginLeft: "5px" }}
             >
-              High Traffic
-            </Typography>
-          </Typography>
+              <Typography
+                variant="h5"
+                gutterBottom
+                style={{ marginLeft: "10px" }}
+              >
+                <Typography
+                  variant="h5"
+                  style={{
+                    width: "95%",
+                    backgroundColor: "#58C55F",
+                    marginLeft: "5px",
+                    justifyContent: "center",
+                    marginTop: "10px",
+                    height: "50px",
+                    alignItems: "center",
+                    display: "flex",
+                    color: "white",
+                  }}
+                >
+                  {d1GateStatus >= d2GateStatus ? "D1" : "D2"}
+                </Typography>
+              </Typography>
+            </Box>
+            <Box
+              style={{
+                width: "100%",
+              }}
+            >
+              <Typography
+                variant="h5"
+                gutterBottom
+                style={{ marginLeft: "10px" }}
+              >
+                <Typography
+                  variant="h5"
+                  style={{
+                    width: "95%",
+                    backgroundColor: "#F9A81B",
+                    marginLeft: "5px",
+                    justifyContent: "center",
+                    marginTop: "10px",
+                    height: "50px",
+                    alignItems: "center",
+                    display: "flex",
+                    color: "white",
+                  }}
+                >
+                  {d1GateStatus < d2GateStatus ? "D1" : "D2"}
+                </Typography>
+              </Typography>
+            </Box>
+
+            <Box
+              style={{
+                display: "flex",
+                alignItems: "center",
+                marginTop: "5px",
+              }}
+            >
+              <Typography
+                gutterBottom
+                variant="h8"
+                style={{ display: "flex", alignItems: "center" }}
+              >
+                <MdOutlineRadioButtonChecked
+                  style={{ height: "20px", width: "20px", color: "#58C55F" }}
+                />
+                <Typography
+                  variant="h8"
+                  style={{ fontWeight: "bold", marginLeft: "5px" }}
+                >
+                  Low Traffic
+                </Typography>
+                <MdOutlineRadioButtonChecked
+                  style={{
+                    height: "20px",
+                    width: "20px",
+                    color: "#F9A81B",
+                    marginLeft: "10px",
+                  }}
+                />
+                <Typography
+                  variant="h8"
+                  style={{ fontWeight: "bold", marginLeft: "5px" }}
+                >
+                  High Traffic
+                </Typography>
+              </Typography>
+            </Box>
+          </Grid>
         </Box>
       </div>
     </div>

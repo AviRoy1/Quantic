@@ -12,7 +12,9 @@ function App() {
     <BrowserRouter>
       <div style={{ backgroundColor: "#e4ebf3", minHeight: "100vh" }}>
         <Routes>
-          <Route path="/" element={<LoginPage />} />
+          {/* <Route path="/" element={<LoginPage />} /> */}
+          <Route path="/" element={<Navbar />} />
+
           {/* <Route path='/' element={<LoginPage />}/> */}
           <Route path="/Entry-Gate" element={<MainContainer />} />
           <Route path="/PSHA" element={<Psha />} />

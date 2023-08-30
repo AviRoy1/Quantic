@@ -31,7 +31,7 @@ const Sha = () => {
 
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <div
         style={{
           display: "flex",
@@ -55,114 +55,122 @@ const Sha = () => {
         </div>
 
         <div
-          style={{
-            display: "flex",
-            justifyContent: "flex-start",
-            alignItems: "stretch",
-            backgroundColor: "#e4ebf3",
-            border: "1px solid #ccc",
-            // margin: "8px",
-            marginTop: "16px",
-            marginLeft: "10px",
-            height: "120px",
-          }}
+          style={{ borderColor: "#153f7b", border: "2px solid", margin: "5px" }}
         >
-          <Box
-            display="flex"
-            flexDirection="column"
-            alignItems="start"
-            justifyContent="flex-start"
-            width="100%"
-            marginButton="10px"
-            // padding="16px"
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "flex-start",
+              alignItems: "stretch",
+              backgroundColor: "#e4ebf3",
+              // marginTop: "16px",
+              marginLeft: "10px",
+              marginRight: "10px",
+              // height: "60px",
+            }}
           >
-            <Tabs
-              value={activeTab}
-              onChange={handleTabChange}
-              variant="fullWidth"
-              indicatorColor="primary"
-              textColor="primary"
+            <Box
+              display="flex"
+              flexDirection="column"
+              alignItems="start"
+              justifyContent="flex-start"
+              width="100%"
+              // marginButton="10px"
+              // padding="16px"
             >
-              {arr.map((item) => (
-                <Tab label={item} />
-              ))}
+              <Tabs
+                value={activeTab}
+                onChange={handleTabChange}
+                variant="fullWidth"
+                indicatorColor="primary"
+                textColor="primary"
+              >
+                {arr.map((item) => (
+                  <Tab label={item} />
+                ))}
 
-              {/* <Tab label="D1Q1" />
+                {/* <Tab label="D1Q1" />
               <Tab label="D1Q2" />
               <Tab label="D2Q1" />
               <Tab label="D2Q2" /> */}
-            </Tabs>
-            <style>
-              {`
+              </Tabs>
+              <style>
+                {`
           /* Change the background color of the active tab */
           .MuiTabs-flexContainer button.Mui-selected {
             background-color: #153f7b;
             color: white; /* Set text color to make it readable */
           }
         `}
-            </style>
-          </Box>
-          <Box
-            display="flex"
-            flexDirection="column"
-            alignItems="flex-end"
-            justifyContent="center"
-            marginRight={"15px"}
-            marginButton="15px"
-            backgroundColor="#e4ebf3"
-          >
-            <input
-              type="date"
-              value={selectedDate}
-              onChange={handleDateChange}
-              max={new Date().toISOString().split("T")[0]}
-              style={{
-                backgroundColor: "#153f7b",
-                border: "1px solid #ccc",
-                marginLeft: "220px",
-                borderRadius: "4px",
-                height: "40px",
-                width: "40%",
-                color: "#e4ebf3",
-              }}
-            />
-            <style>
-              {`
-      /* Change the color of the calendar icon */
+              </style>
+            </Box>
+            <Box
+              display="flex"
+              flexDirection="column"
+              alignItems="flex-end"
+              justifyContent="center"
+              width="50%"
+              // marginRight={"30px"}
+              marginBottom={"15px"}
+              backgroundColor="#e4ebf3"
+            >
+              <input
+                type="date"
+                value={selectedDate}
+                onChange={handleDateChange}
+                max={new Date().toISOString().split("T")[0]}
+                style={{
+                  backgroundColor: "#153f7b",
+                  border: "1px solid #ccc",
+                  borderRadius: "4px",
+                  height: "40px",
+                  width: "27%",
+                  color: "#e4ebf3",
+                  padding: "6px",
+                }}
+              />
+              <style>
+                {`
+      /* Change the color of the calendar icon and adjust its size */
       input[type="date"]::-webkit-calendar-picker-indicator {
         filter: invert(1); /* This inverts the color of the icon */
+        width: 25px; /* Adjust the width */
+        height: 25px; /* Adjust the height */
+        margin-left: 6px; /* Add margin for spacing */
       }
     `}
-            </style>
-          </Box>
-        </div>
+              </style>
+            </Box>
+          </div>
 
-        <div
-          style={{
-            flex: 1,
-            border: "1px solid #ccc",
-            display: "flex",
-            justifyContent: "flex-start",
-            alignItems: "space",
-            backgroundColor: "#e4ebf3",
-            margin: "8px",
-          }}
-        >
-          <LineChartComp index={index} />
-        </div>
-        <div
-          style={{
-            flex: 1,
-            border: "1px solid #ccc",
-            display: "flex",
-            justifyContent: "flex-start",
-            alignItems: "center",
-            backgroundColor: "#e4ebf3",
-            margin: "8px",
-          }}
-        >
-          {/* <BarChart index={index} /> */}
-          <BarandLineChart index={index} />
+          <div
+            style={{
+              flex: 1,
+              // border: "1px solid #ccc",
+              display: "flex",
+              justifyContent: "flex-start",
+              alignItems: "space",
+              backgroundColor: "#e4ebf3",
+              marginLeft: "8px",
+              marginRight: "8px",
+            }}
+          >
+            <LineChartComp index={index} />
+          </div>
+          <div
+            style={{
+              flex: 1,
+              border: "1px solid #ccc",
+              display: "flex",
+              justifyContent: "flex-start",
+              alignItems: "center",
+              backgroundColor: "#e4ebf3",
+              margin: "8px",
+            }}
+          >
+            {/* <BarChart index={index} /> */}
+            <BarandLineChart index={index} />
+          </div>
         </div>
       </div>
     </>
