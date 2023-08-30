@@ -84,10 +84,15 @@ const Navbar = () => {
             key={text}
             onClick={() => handleItemClick(text)}
             sx={{
-              backgroundColor: selectedItem === text ? "#153f7d" : "white",
+              backgroundColor:
+                selectedItem === text ? "#153f7d" : "transparent", // Change this line
               display: "flex",
               alignItems: "center",
               color: selectedItem === text ? "white" : "black",
+              "&:hover": {
+                backgroundColor:
+                  selectedItem === text ? "#153f7d" : "transparent", // Change this line
+              },
             }}
           >
             {/* <Link
@@ -282,6 +287,19 @@ const Navbar = () => {
             >
               QUANTIC
             </Typography>
+          </div>
+          <div>
+            <h3
+              style={{
+                color: "#153f7d",
+                fontWeight: "bolder",
+                fontSize: "25px",
+                textAlign: "center",
+                flexGrow: 1,
+              }}
+            >
+              {selectedItem}
+            </h3>
           </div>
           <div>
             <IconButton

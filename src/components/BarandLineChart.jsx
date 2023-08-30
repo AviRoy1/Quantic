@@ -24,6 +24,9 @@ const BarandLineChart = ({ index }) => {
         show: false,
       },
     },
+    legend: {
+      show: false,
+    },
     dataLabels: {
       enabled: false,
     },
@@ -42,6 +45,12 @@ const BarandLineChart = ({ index }) => {
     },
     xaxis: {
       categories: arr,
+      title: {
+        text: "Time(Hour)",
+        style: {
+          color: "black",
+        },
+      },
     },
     yaxis: [
       {
@@ -71,8 +80,12 @@ const BarandLineChart = ({ index }) => {
         seriesName: "Average Processing Time",
         opposite: true,
         axisTicks: {
-          show: true,
+          show: false, // Hide the axis ticks
         },
+        labels: {
+          show: false, // Hide the axis labels
+        },
+        show: false,
       },
       {
         seriesName: "Average Waiting Time",
@@ -93,15 +106,11 @@ const BarandLineChart = ({ index }) => {
     ],
     tooltip: {
       fixed: {
-        enabled: true,
+        enabled: false,
         position: "topLeft",
         offsetY: 30,
         offsetX: 60,
       },
-    },
-    legend: {
-      horizontalAlign: "left",
-      offsetX: 40,
     },
     colors: ["#153f7b", "#707070"],
   };

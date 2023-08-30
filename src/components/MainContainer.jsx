@@ -122,19 +122,20 @@ const MainContainer = () => {
                   border: "1px solid #ccc",
                   borderRadius: "4px",
                   height: "40px",
-                  width: "27%",
+                  width: "30%",
                   color: "#e4ebf3",
                   padding: "6px",
+                  fontSize: "16px",
                 }}
               />
               <style>
                 {`
       /* Change the color of the calendar icon and adjust its size */
       input[type="date"]::-webkit-calendar-picker-indicator {
-        filter: invert(1); /* This inverts the color of the icon */
-        width: 25px; /* Adjust the width */
-        height: 25px; /* Adjust the height */
-        margin-left: 6px; /* Add margin for spacing */
+        filter: invert(1); 
+        width: 25px; 
+        height: 25px; 
+        margin-left: 6px; 
       }
     `}
               </style>

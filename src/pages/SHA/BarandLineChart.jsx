@@ -41,7 +41,7 @@ const BarandLineChart = () => {
     xaxis: {
       categories: arr,
       title: {
-        text: "Avg Processing Time",
+        text: "Time(Hour)",
         offsetX: 0,
         offsetY: 5,
         style: {
@@ -79,6 +79,13 @@ const BarandLineChart = () => {
         seriesName: "Average Processing Time",
         align: "left",
         offsetX: 2,
+        axisTicks: {
+          show: false, // Hide the axis ticks
+        },
+        labels: {
+          show: false, // Hide the axis labels
+        },
+        show: false,
         style: {
           fontSize: "22px",
           color: "#153f7b",

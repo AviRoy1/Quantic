@@ -87,7 +87,7 @@ const LineChartComp = ({ index }) => {
 
   const data = Object.values(dummyData.PSHA.Heatmap).map((item, index) => {
     arr.push(item.Pax);
-    arr2.push(index + "-" + (index + 1) + " " + "hr");
+    arr2.push(index + "-" + (index + 1));
   });
   arr.pop();
   arr2.pop();
@@ -111,6 +111,9 @@ const LineChartComp = ({ index }) => {
 
   const options = {
     chart: {
+      toolbar: {
+        show: false,
+      },
       height: 350,
       type: "line",
       zoom: {
@@ -167,7 +170,7 @@ const LineChartComp = ({ index }) => {
     xaxis: {
       categories: arr2,
       title: {
-        text: "Time in Hr",
+        text: " Time(Hour)",
         style: {
           fontSize: "14px",
           fontWeight: "bold",
@@ -196,11 +199,12 @@ const LineChartComp = ({ index }) => {
         },
       },
       min: 0,
-      tickAmount: 5,
+      max: 100, // Set the maximum value
+      tickAmount: 4,
       labels: {
-        formatter: (value) => {
-          return value.toFixed(0); // Format the tick labels as whole numbers
-        },
+        // formatter: (value) => {
+        //   return (value * 25).toFixed(0); // Calculate the tick label based on interval of 25
+        // },
         style: {
           fontSize: "12px",
           fontWeight: "bold",

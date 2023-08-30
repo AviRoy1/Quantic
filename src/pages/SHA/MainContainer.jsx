@@ -128,9 +128,10 @@ const Sha = () => {
                   border: "1px solid #ccc",
                   borderRadius: "4px",
                   height: "40px",
-                  width: "30%",
+                  width: "37%",
                   color: "#e4ebf3",
                   padding: "6px",
+                  fontSize: "16px",
                 }}
               />
               <style>

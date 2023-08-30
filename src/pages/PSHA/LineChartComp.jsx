@@ -89,7 +89,7 @@ const LineChartComp = ({ index }) => {
     arr.push(item.Pax);
     // let c = "am";
     // if (index >= 12) c = "pm";
-    arr2.push(index + "-" + (index + 1) + " " + "hr");
+    arr2.push(index + "-" + (index + 1));
   });
   arr.pop();
   arr2.pop();
@@ -113,6 +113,9 @@ const LineChartComp = ({ index }) => {
 
   const options = {
     chart: {
+      toolbar: {
+        show: false,
+      },
       height: 350,
       type: "line",
       zoom: {
@@ -169,7 +172,7 @@ const LineChartComp = ({ index }) => {
     xaxis: {
       categories: arr2,
       title: {
-        text: "Time in Hr",
+        text: "Time(Hour)",
         style: {
           fontSize: "14px",
           fontWeight: "bold",
@@ -194,6 +197,18 @@ const LineChartComp = ({ index }) => {
         text: "PAX (1x100)/hr",
         style: {
           fontSize: "14px",
+          fontWeight: "bold",
+        },
+      },
+      min: 0,
+      max: 100, // Set the maximum value
+      tickAmount: 4,
+      labels: {
+        // formatter: (value) => {
+        //   return (value * 25).toFixed(0); // Calculate the tick label based on interval of 25
+        // },
+        style: {
+          fontSize: "12px",
           fontWeight: "bold",
         },
       },

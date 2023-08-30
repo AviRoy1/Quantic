@@ -119,9 +119,10 @@ const Psha = () => {
                   border: "1px solid #ccc",
                   borderRadius: "4px",
                   height: "40px",
-                  width: "27%",
+                  width: "30%",
                   color: "#e4ebf3",
                   padding: "6px",
+                  fontSize: "16px",
                 }}
               />
               <style>

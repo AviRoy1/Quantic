@@ -27,6 +27,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
+    backgroundAttachment: "fixed",
   },
   paper: {
     display: "flex",
@@ -128,6 +129,9 @@ function LoginPage() {
               label="Password"
               type="password"
               variant="outlined"
+              style={{
+                marginTop: " 13px",
+              }}
               required
               fullWidth
               onChange={(e) => setPassword(e.target.value)}
@@ -135,6 +139,10 @@ function LoginPage() {
             <Button
               variant="contained"
               fullWidth
+              style={{
+                margin: "13px",
+                marginRight: "10px",
+              }}
               className={classes.button}
               onClick={loginHandler}
             >

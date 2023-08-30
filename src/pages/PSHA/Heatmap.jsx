@@ -190,7 +190,7 @@ const HeatmapComponent = () => {
                   alignItems: "center",
                   width: "70px",
                   padding: "5px 0",
-                  marginLeft: "5px",
+                  marginLeft: "27px",
                   // flexGrow: 1,
                 }}
               >
@@ -230,10 +230,10 @@ const HeatmapComponent = () => {
         </div>
         <div
           style={{
-            width: "100%",
+            width: "96%",
             height: "134px",
             fontFamily: "sans-serif",
-            marginLeft: "10px",
+            marginLeft: "26px",
             marginRight: "auto",
             marginTop: "14px",
             overflowY: "auto",
@@ -278,7 +278,6 @@ const HeatmapComponent = () => {
                 fontSize: ".7rem",
                 color: color,
                 border: "1px solid white",
-                // You can adjust margin, padding, etc. here
               };
             }}
             cellHeight="2.5rem"
