@@ -55,7 +55,12 @@ const Sha = () => {
         </div>
 
         <div
-          style={{ borderColor: "#153f7b", border: "2px solid", margin: "5px" }}
+          style={{
+            borderColor: "#153f7b",
+            border: "2px solid",
+            margin: "5px",
+            marginTop: "19px",
+          }}
         >
           <div
             style={{
@@ -63,7 +68,6 @@ const Sha = () => {
               justifyContent: "flex-start",
               alignItems: "stretch",
               backgroundColor: "#e4ebf3",
-              // marginTop: "16px",
               marginLeft: "10px",
               marginRight: "10px",
               // height: "60px",
@@ -124,7 +128,7 @@ const Sha = () => {
                   border: "1px solid #ccc",
                   borderRadius: "4px",
                   height: "40px",
-                  width: "27%",
+                  width: "30%",
                   color: "#e4ebf3",
                   padding: "6px",
                 }}
@@ -151,7 +155,7 @@ const Sha = () => {
               justifyContent: "flex-start",
               alignItems: "space",
               backgroundColor: "#e4ebf3",
-              marginLeft: "8px",
+              // marginLeft: "8px",
               marginRight: "8px",
             }}
           >
@@ -166,6 +170,7 @@ const Sha = () => {
               alignItems: "center",
               backgroundColor: "#e4ebf3",
               margin: "8px",
+              marginTop: "22px",
             }}
           >
             {/* <BarChart index={index} /> */}

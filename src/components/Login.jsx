@@ -12,17 +12,21 @@ import LockIcon from "@mui/icons-material/Lock";
 import { Navigate, useNavigate } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
-const backgroundImage = "https://wallpaperaccess.com/full/4492167.gif";
+import backgroundImage from "../Icons/login.png";
+// const backgroundImage = "https://wallpaperaccess.com/full/4492167.gif";
 
 const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
-    justifyContent: "center", // Center horizontally
-    alignItems: "center", // Center vertically
+    justifyContent: "center",
+    alignItems: "center",
     minHeight: "100vh",
     width: "100%",
     backgroundColor: "#5F88FE",
+    backgroundImage: `url(${backgroundImage})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
   },
   paper: {
     display: "flex",
@@ -82,7 +86,7 @@ function LoginPage() {
     if (userName === "admin123" && password === "admin123") {
       toast.dismiss();
       toast.success("Welcome Back!!");
-      navigate("/Entry-Gate");
+      navigate("/home");
     } else {
       toast.dismiss();
       toast.error("Invalid Email or Password !");

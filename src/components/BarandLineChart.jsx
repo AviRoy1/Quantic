@@ -20,6 +20,9 @@ const BarandLineChart = ({ index }) => {
       height: 350,
       type: "line",
       stacked: false,
+      toolbar: {
+        show: false,
+      },
     },
     dataLabels: {
       enabled: false,
@@ -119,7 +122,7 @@ const BarandLineChart = ({ index }) => {
   return (
     <div
       id="chart"
-      style={{ width: "65%", background: "white", marginLeft: "14px" }}
+      style={{ width: "65%", background: "white", marginLeft: "24px" }}
     >
       <ReactApexChart
         options={options}

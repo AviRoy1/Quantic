@@ -72,40 +72,6 @@ const HeatmapComponent = () => {
     },
   ];
 
-  // const yLabels = [
-  //   "0 am",
-  //   "1 am",
-  //   "2 am",
-  //   "3 am",
-  //   "4 am",
-  //   "5 am",
-  //   "6 am",
-  //   "7 am",
-  //   "8 am",
-  //   "9 am",
-  //   "10 am",
-  //   "11 am",
-  //   "12 pm",
-  //   "13 pm",
-  //   "14 pm",
-  //   "15 pm",
-  //   "16 pm",
-  //   "17 pm",
-  //   "18 pm",
-  //   "19 pm",
-  //   "20 pm",
-  //   "21 pm",
-  //   "22 pm",
-  //   "23 pm",
-  // ];
-
-  // const data = yLabels.map((yLabel, yIndex) =>
-  //   xLabels.map(
-  //     (xLabel, xIndex) =>
-  //       jsonData["Entrance"][xLabel.label]["Heatmap"][yIndex.toString()]["Pax"]
-  //   )
-  // );
-
   for (let i = currentHour; i >= currentHour - 23; i--) {
     const hour = (24 + i) % 24;
     yLabels.push(`${hour}`);
@@ -119,13 +85,17 @@ const HeatmapComponent = () => {
     });
     data.push(xData);
   }
+  const newLabel = {
+    label: "Hr",
+  };
+  xLabels.unshift(newLabel);
 
   return (
     <div
       style={{
         display: "flex",
         justifyContent: "space-between",
-        marginLeft: "10px",
+        // marginLeft: "10px",
         height: "100%",
         width: "100%",
       }}
@@ -163,6 +133,7 @@ const HeatmapComponent = () => {
             </Typography>
           </Typography>
         </div>
+
         <div
           style={{
             display: "flex",
@@ -171,31 +142,57 @@ const HeatmapComponent = () => {
             justifyContent: "space-between",
             alignContent: "center",
             alignItems: "center",
-            marginLeft: "50px",
+            marginLeft: "10px",
             width: "100%",
           }}
         >
-          {xLabels.map((xLabel) => (
-            <div
-              key={xLabel.label}
-              style={{
-                display: "flex",
-                flexDirection: "row",
-                alignItems: "center",
-                width: "70px",
-                padding: "5px 0",
-                flexGrow: 1,
-              }}
-            >
-              {xLabel.icon}
-              <Typography
-                variant="caption"
-                style={{ color: "#153f7b", textAlign: "center" }}
+          {xLabels.map((xLabel) =>
+            xLabel.label === "Hr" ? (
+              <div
+                key={xLabel.label}
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "center",
+                  width: "70px",
+                  padding: "5px 0",
+                  marginLeft: "1px",
+                  // flexGrow: 1,
+                }}
               >
-                {xLabel.label}
-              </Typography>
-            </div>
-          ))}
+                <Typography
+                  variant="caption"
+                  style={{
+                    color: "#153f7b",
+                    textAlign: "center",
+                    fontSize: "15px",
+                  }}
+                >
+                  {xLabel.label}
+                </Typography>
+              </div>
+            ) : (
+              <div
+                key={xLabel.label}
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "center",
+                  width: "70px",
+                  padding: "5px 0",
+                  flexGrow: 1,
+                }}
+              >
+                {xLabel.icon}
+                <Typography
+                  variant="caption"
+                  style={{ color: "#153f7b", textAlign: "center" }}
+                >
+                  {xLabel.label}
+                </Typography>
+              </div>
+            )
+          )}
         </div>
         <div
           style={{
@@ -226,27 +223,33 @@ const HeatmapComponent = () => {
             })}
             cellStyle={(_x, _y, ratio) => {
               let backgroundColor = "";
+              let color = "";
+
               if (ratio >= 0 && ratio <= 0.25) {
                 backgroundColor = "#dcebfe";
+                color = "black";
               } else if (ratio > 0.25 && ratio <= 0.5) {
                 backgroundColor = "#9abcec";
+                color = "black";
               } else if (ratio > 0.5 && ratio <= 0.75) {
                 backgroundColor = "#487ac1";
+                color = "white";
               } else {
                 backgroundColor = "#153f7b";
+                color = "white";
               }
 
               return {
                 background: backgroundColor,
                 fontSize: ".7rem",
-                color: `rgba(0, 0, 0, ${ratio / 2 + 0.7})`,
+                color: color,
                 border: "1px solid white",
-                // margin: "1px",
+                // You can adjust margin, padding, etc. here
               };
             }}
             cellHeight="2.5rem"
             xLabelsPos="top"
-            //   onClick={(x, y) => alert(`Clicked (${x}, ${y})`)}
+            // onClick={(x, y) => alert(`Clicked (${x}, ${y})`)}
           />
         </div>
       </div>
@@ -254,7 +257,7 @@ const HeatmapComponent = () => {
       <div
         style={{
           flex: "1 1 17%",
-          marginLeft: "10px",
+          marginLeft: "24px",
           display: "flex",
           flexDirection: "column",
           alignContent: "flex-end",

@@ -37,8 +37,8 @@ const Navbar = () => {
   };
   const navigate = useNavigate();
   const handleClose = () => {
-    // setAnchorEl(null);
-    // navigate("/");
+    setAnchorEl(null);
+    navigate("/");
   };
   const handleItemClick = (text) => {
     setSelectedItem(text);
@@ -60,9 +60,9 @@ const Navbar = () => {
     setOpenDrawer(open);
   };
 
-  // const onClickHandler = () => {
-  //   navigate("/");
-  // };
+  const onClickHandler = () => {
+    navigate("/");
+  };
   console.log(selectedItem);
   const list = () => (
     <div
@@ -240,7 +240,7 @@ const Navbar = () => {
       >
         <Typography
           variant="h6"
-          // onClick={() => onClickHandler()}
+          onClick={() => onClickHandler()}
           gutterBottom
           style={{
             marginLeft: "10px",

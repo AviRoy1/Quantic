@@ -26,6 +26,9 @@ const BarChart = ({ index }) => {
       },
       xaxis: {
         categories: ["<5mins", "<10mins", ">10mins"],
+        title: {
+          text: "PAX",
+        },
       },
       colors: ["#153f7b", "#153f7b", "#153f7b"],
     },

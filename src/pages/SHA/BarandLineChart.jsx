@@ -18,6 +18,9 @@ const BarandLineChart = () => {
       height: 350,
       type: "line",
       stacked: false,
+      toolbar: {
+        show: false,
+      },
     },
     dataLabels: {
       enabled: false,
@@ -37,6 +40,16 @@ const BarandLineChart = () => {
     },
     xaxis: {
       categories: arr,
+      title: {
+        text: "Avg Processing Time",
+        offsetX: 0,
+        offsetY: 5,
+        style: {
+          fontSize: "14px",
+          color: "#153f7b",
+          fontWeight: "bold",
+        },
+      },
     },
     yaxis: [
       {

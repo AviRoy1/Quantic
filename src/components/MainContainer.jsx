@@ -53,7 +53,12 @@ const MainContainer = () => {
         </div>
 
         <div
-          style={{ borderColor: "#153f7b", border: "2px solid", margin: "5px" }}
+          style={{
+            borderColor: "#153f7b",
+            border: "2px solid",
+            margin: "5px",
+            marginTop: "19px",
+          }}
         >
           <div
             style={{
@@ -158,6 +163,7 @@ const MainContainer = () => {
               alignItems: "center",
               backgroundColor: "#e4ebf3",
               margin: "8px",
+              marginTop: "22px",
             }}
           >
             <BarChart index={index} />

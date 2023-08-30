@@ -119,36 +119,38 @@ const HeatmapComponent = () => {
     });
     data.push(xData);
   }
+  const newLabel = {
+    label: "Hr",
+  };
+  xLabels.unshift(newLabel);
 
   return (
     <div
       style={{
         display: "flex",
-        flexDirection: "column",
-        marginTop: "17px",
-        width: "100%",
-        alignItems: "start",
-        maxHeight: "250px",
+        justifyContent: "space-between",
         // marginLeft: "10px",
-        marginRight: "10px",
+        height: "100%",
+        width: "100%",
       }}
     >
       <div
         style={{
-          display: "flex",
-          width: "98%",
-          flexDirection: "column",
+          flex: "2 1 59%",
+          minWidth: "59%",
           // marginLeft: "20px",
           backgroundColor: "white",
         }}
       >
         <div
           style={{
-            width: "100%",
+            // width: "100%",
             backgroundColor: "#153f7b",
             borderRadius: "10px",
             justifyContent: "start",
             marginLeft: "10px",
+            marginRight: "10px",
+            marginTop: "10px",
           }}
         >
           <Typography variant="h5" gutterBottom style={{ marginLeft: "10px" }}>
@@ -165,37 +167,66 @@ const HeatmapComponent = () => {
             </Typography>
           </Typography>
         </div>
+
         <div
           style={{
             display: "flex",
             flexDirection: "row",
             margin: "3px 0",
             justifyContent: "space-between",
+            alignContent: "center",
             alignItems: "center",
-            marginLeft: "120px",
-            marginRight: "120px",
+            marginLeft: "10px",
+            width: "100%",
           }}
         >
-          {xLabels.map((xLabel) => (
-            <div
-              key={xLabel.label}
-              style={{
-                display: "flex",
-                flexDirection: "row",
-                alignItems: "center",
-                width: "70px",
-                padding: "5px 0",
-              }}
-            >
-              {xLabel.icon}
-              <Typography
-                variant="caption"
-                style={{ color: "#153f7b", textAlign: "center" }}
+          {xLabels.map((xLabel) =>
+            xLabel.label === "Hr" ? (
+              <div
+                key={xLabel.label}
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "center",
+                  width: "70px",
+                  padding: "5px 0",
+                  marginLeft: "5px",
+                  // flexGrow: 1,
+                }}
               >
-                {xLabel.label}
-              </Typography>
-            </div>
-          ))}
+                <Typography
+                  variant="caption"
+                  style={{
+                    color: "#153f7b",
+                    textAlign: "center",
+                    fontSize: "15px",
+                  }}
+                >
+                  {xLabel.label}
+                </Typography>
+              </div>
+            ) : (
+              <div
+                key={xLabel.label}
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "center",
+                  width: "70px",
+                  padding: "5px 0",
+                  flexGrow: 1,
+                }}
+              >
+                {xLabel.icon}
+                <Typography
+                  variant="caption"
+                  style={{ color: "#153f7b", textAlign: "center" }}
+                >
+                  {xLabel.label}
+                </Typography>
+              </div>
+            )
+          )}
         </div>
         <div
           style={{
@@ -226,27 +257,33 @@ const HeatmapComponent = () => {
             })}
             cellStyle={(_x, _y, ratio) => {
               let backgroundColor = "";
+              let color = "";
+
               if (ratio >= 0 && ratio <= 0.25) {
                 backgroundColor = "#dcebfe";
+                color = "black";
               } else if (ratio > 0.25 && ratio <= 0.5) {
                 backgroundColor = "#9abcec";
+                color = "black";
               } else if (ratio > 0.5 && ratio <= 0.75) {
                 backgroundColor = "#487ac1";
+                color = "white";
               } else {
                 backgroundColor = "#153f7b";
+                color = "white";
               }
 
               return {
                 background: backgroundColor,
                 fontSize: ".7rem",
-                color: `rgba(0, 0, 0, ${ratio / 2 + 0.7})`,
+                color: color,
                 border: "1px solid white",
-                // margin: "1px",
+                // You can adjust margin, padding, etc. here
               };
             }}
             cellHeight="2.5rem"
             xLabelsPos="top"
-            //   onClick={(x, y) => alert(`Clicked (${x}, ${y})`)}
+            // onClick={(x, y) => alert(`Clicked (${x}, ${y})`)}
           />
         </div>
       </div>

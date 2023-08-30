@@ -18,6 +18,8 @@ const LineChartComp = ({ index }) => {
       arr2.push(index + "-" + (index + 1) + " " + "hr");
     }
   );
+  arr.pop();
+  arr2.pop();
   const maxPeakIndex = arr.indexOf(Math.max(...arr));
 
   const series = [
@@ -71,7 +73,7 @@ const LineChartComp = ({ index }) => {
               color: "#fff",
               background: "#e74c3c",
             },
-            text: "Max Peak",
+            text: "Peak Hr",
           },
         },
       ],
@@ -94,9 +96,22 @@ const LineChartComp = ({ index }) => {
     xaxis: {
       categories: arr2,
       title: {
-        text: "Time",
+        text: "Time in Hr",
         style: {
           fontSize: "14px",
+          fontWeight: "bold",
+        },
+        offsetX: 0,
+        offsetY: -16,
+      },
+      labels: {
+        rotate: -45,
+        rotateAlways: true,
+        hideOverlappingLabels: true,
+        showDuplicates: false,
+        trim: true,
+        style: {
+          fontSize: "12px",
           fontWeight: "bold",
         },
       },
@@ -129,7 +144,14 @@ const LineChartComp = ({ index }) => {
         }}
       >
         <div style={{ flex: 1 }}>
-          <div id="chart" style={{ background: "white" }}>
+          <div
+            id="chart"
+            style={{
+              background: "white",
+              margin: "10px",
+              marginRight: "5px",
+            }}
+          >
             <ReactApexChart
               options={options}
               series={series}
