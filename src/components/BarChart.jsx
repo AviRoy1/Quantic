@@ -26,8 +26,8 @@ const BarChart = ({ index }) => {
           color: "#153f7b",
           fontWeight: "bold",
         },
-        offsetX: 28,
-        offsetY: 5,
+        offsetX: 22,
+        offsetY: 8,
       },
       plotOptions: {
         bar: {
@@ -40,6 +40,11 @@ const BarChart = ({ index }) => {
       },
       xaxis: {
         categories: ["<5mins", "<10mins", ">10mins"],
+        title: {
+          text: "PAX",
+          offsetX: 0,
+          offsetY: 5,
+        },
       },
       colors: ["#153f7b", "#153f7b", "#153f7b"],
     },

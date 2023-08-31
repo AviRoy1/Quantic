@@ -26,8 +26,8 @@ const BarChart = ({ index }) => {
           color: "#153f7b",
           fontWeight: "bold",
         },
-        offsetX: 28,
-        offsetY: 5,
+        offsetX: 24,
+        offsetY: 10,
       },
       plotOptions: {
         bar: {

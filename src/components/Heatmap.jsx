@@ -28,7 +28,7 @@ const HeatmapComponent = () => {
         <AccessibilityIcon
           style={{
             height: "21px",
-            width: "25px",
+            width: "40px",
             color: d1q1 === true ? "green" : "red",
           }}
         />
@@ -40,7 +40,7 @@ const HeatmapComponent = () => {
         <AccessibilityIcon
           style={{
             height: "21px",
-            width: "25px",
+            width: "40px",
             color: d1q2 === true ? "green" : "red",
           }}
         />
@@ -52,7 +52,7 @@ const HeatmapComponent = () => {
         <AccessibilityIcon
           style={{
             height: "21px",
-            width: "25px",
+            width: "40px",
             color: d2q1 === true ? "green" : "red",
           }}
         />
@@ -64,7 +64,7 @@ const HeatmapComponent = () => {
         <AccessibilityIcon
           style={{
             height: "21px",
-            width: "25px",
+            width: "50px",
             color: d2q2 === true ? "green" : "red",
           }}
         />
@@ -86,8 +86,9 @@ const HeatmapComponent = () => {
     data.push(xData);
   }
   const newLabel = {
-    label: "Hr",
+    label: "Hour",
   };
+
   xLabels.unshift(newLabel);
 
   return (
@@ -149,8 +150,8 @@ const HeatmapComponent = () => {
             width: "100%",
           }}
         >
-          {xLabels.map((xLabel) =>
-            xLabel.label === "Hr" ? (
+          {xLabels.map((xLabel, index) =>
+            xLabel.label === "Hour" ? (
               <div
                 key={xLabel.label}
                 style={{
@@ -161,6 +162,8 @@ const HeatmapComponent = () => {
                   padding: "5px 0",
                   marginLeft: "19px",
                   // flexGrow: 1,
+                  flexGrow: 1,
+                  marginRight: "-90px",
                 }}
               >
                 <Typography
@@ -184,6 +187,10 @@ const HeatmapComponent = () => {
                   width: "70px",
                   padding: "5px 0",
                   flexGrow: 1,
+                  marginLeft:
+                    xLabel.label === "D2Q2" || xLabel.label === "D2Q1"
+                      ? "20px"
+                      : 0,
                 }}
               >
                 {xLabel.icon}
