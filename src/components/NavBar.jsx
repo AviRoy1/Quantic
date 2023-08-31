@@ -142,9 +142,6 @@ const Navbar = () => {
             marginLeft: "10px",
             marginRight: "10px",
             marginTop: "120px",
-            alignItems: "center",
-            textAlign: "left",
-            verticalAlign: "middle",
           }}
         >
           <Typography
@@ -271,7 +268,14 @@ const Navbar = () => {
   return (
     <div className="navbar-container">
       <AppBar position="static" sx={{ backgroundColor: "white" }}>
-        <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
+        <Toolbar
+          sx={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center", // Align items vertically
+          }}
+        >
+          {/* Left container */}
           <div style={{ display: "flex", alignItems: "center" }}>
             <IconButton
               edge="start"
@@ -289,26 +293,40 @@ const Navbar = () => {
                 fontWeight: "bolder",
                 fontSize: "25px",
                 textAlign: "center",
-                flexGrow: 1,
               }}
             >
               QUANTIC
             </Typography>
           </div>
+
+          {/* Center container */}
           <div>
+            {/* <h3
+              style={{
+                color: "#153f7d",
+                fontWeight: "bolder",
+                fontSize: "25px",
+                textAlign: "center",
+              }}
+            >
+              {selectedItem}
+            </h3> */}
+          </div>
+
+          {/* Right container */}
+          <div style={{ display: "flex", flexDirection: "row" }}>
             <h3
               style={{
                 color: "#153f7d",
                 fontWeight: "bolder",
                 fontSize: "25px",
                 textAlign: "center",
-                flexGrow: 1,
+                border: "3px solid #153f7d",
+                // padding: "10px",
               }}
             >
               {selectedItem}
             </h3>
-          </div>
-          <div>
             <IconButton
               size="large"
               aria-label="show more"

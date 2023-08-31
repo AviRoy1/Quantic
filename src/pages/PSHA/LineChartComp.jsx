@@ -162,6 +162,8 @@ const LineChartComp = ({ index }) => {
         color: "#153f7b",
         fontWeight: "bold",
       },
+      offsetX: 18,
+      offsetY: 5,
     },
     grid: {
       row: {

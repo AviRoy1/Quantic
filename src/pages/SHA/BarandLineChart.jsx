@@ -31,12 +31,13 @@ const BarandLineChart = () => {
     title: {
       text: "Average Processing Time",
       align: "left",
-      offsetX: 10,
       style: {
         fontSize: "22px",
         color: "#153f7b",
         fontWeight: "bold",
       },
+      offsetX: 31,
+      offsetY: 8,
     },
     xaxis: {
       categories: arr,

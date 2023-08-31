@@ -108,7 +108,7 @@ const MainContainer = () => {
               alignItems="flex-end"
               justifyContent="center"
               width="50%"
-              marginRight={"30px"}
+              // marginRight={"30px"}
               marginBottom={"15px"}
               backgroundColor="#e4ebf3"
             >

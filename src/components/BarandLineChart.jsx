@@ -36,12 +36,13 @@ const BarandLineChart = ({ index }) => {
     title: {
       text: "Average Waiting Time and Average Processing Time",
       align: "left",
-      offsetX: 10,
       style: {
         fontSize: "22px",
         color: "#153f7b",
         fontWeight: "bold",
       },
+      offsetX: 28,
+      offsetY: 5,
     },
     xaxis: {
       categories: arr,

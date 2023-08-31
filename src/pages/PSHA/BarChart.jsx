@@ -14,6 +14,20 @@ const BarChart = ({ index }) => {
       chart: {
         type: "bar",
         height: 350,
+        toolbar: {
+          show: false,
+        },
+      },
+      title: {
+        text: "Avg Waiting Time",
+        align: "left",
+        style: {
+          fontSize: "22px",
+          color: "#153f7b",
+          fontWeight: "bold",
+        },
+        offsetX: 28,
+        offsetY: 5,
       },
       plotOptions: {
         bar: {
@@ -59,11 +73,8 @@ const BarChart = ({ index }) => {
   }, [index]);
 
   return (
-    <div
-      id="chart"
-      style={{ width: "35%", background: "white", marginTop: "5px" }}
-    >
-      <Typography
+    <div id="chart" style={{ width: "35%", background: "white" }}>
+      {/* <Typography
         // variant="h5"
         fontSize={"22px"}
         // size="md"
@@ -73,13 +84,13 @@ const BarChart = ({ index }) => {
         ml="17px"
         color={"#153f7b"}
       >
-        Avg Waiting Time
-      </Typography>
+        
+      </Typography> */}
       <ReactApexChart
         options={chartData.options}
         series={chartData.series}
         type="bar"
-        height={225}
+        height={250}
       />
     </div>
   );

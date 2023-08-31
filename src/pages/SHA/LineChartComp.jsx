@@ -89,6 +89,8 @@ const LineChartComp = ({ index }) => {
         color: "#153f7b",
         fontWeight: "bold",
       },
+      offsetX: 18,
+      offsetY: 5,
     },
     grid: {
       row: {
@@ -172,7 +174,7 @@ const LineChartComp = ({ index }) => {
               series={series}
               type="line"
               height={chartHeight}
-              width={"100%"}
+              width={"98%"}
             />
           </div>
         </div>

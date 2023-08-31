@@ -160,6 +160,8 @@ const LineChartComp = ({ index }) => {
         color: "#153f7b",
         fontWeight: "bold",
       },
+      offsetX: 15,
+      offsetY: 5,
     },
     grid: {
       row: {
@@ -199,12 +201,9 @@ const LineChartComp = ({ index }) => {
         },
       },
       min: 0,
-      max: 100, // Set the maximum value
+      max: 100,
       tickAmount: 4,
       labels: {
-        // formatter: (value) => {
-        //   return (value * 25).toFixed(0); // Calculate the tick label based on interval of 25
-        // },
         style: {
           fontSize: "12px",
           fontWeight: "bold",
@@ -268,14 +267,15 @@ const LineChartComp = ({ index }) => {
               height: "50%",
               display: "flex",
               flexDirection: "column",
+              boxSizing: "border-box",
             }}
           >
             <div
               style={{
-                width: "100%",
-
+                // width: "100%",
                 backgroundColor: "#153f7b",
                 textAlign: "center",
+                boxSizing: "border-box",
               }}
             >
               <Typography

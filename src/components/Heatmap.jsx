@@ -247,6 +247,8 @@ const HeatmapComponent = () => {
                 fontSize: ".7rem",
                 color: color,
                 border: "1px solid white",
+                marginLeft: "10px",
+                marginTop: "5px",
                 // You can adjust margin, padding, etc. here
               };
             }}
