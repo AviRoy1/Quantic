@@ -24,9 +24,6 @@ const BarandLineChart = ({ index }) => {
         show: false,
       },
     },
-    legend: {
-      show: false,
-    },
     dataLabels: {
       enabled: false,
     },
@@ -107,11 +104,15 @@ const BarandLineChart = ({ index }) => {
     ],
     tooltip: {
       fixed: {
-        enabled: false,
+        enabled: true,
         position: "topLeft",
         offsetY: 30,
         offsetX: 60,
       },
+    },
+    legend: {
+      horizontalAlign: "left",
+      offsetX: 40,
     },
     colors: ["#153f7b", "#707070"],
   };

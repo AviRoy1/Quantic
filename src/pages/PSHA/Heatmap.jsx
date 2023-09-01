@@ -189,11 +189,11 @@ const HeatmapComponent = () => {
                   flexDirection: "row",
                   alignItems: "center",
                   width: "70px",
-                  padding: "5px 0",
-                  marginLeft: "27px",
+                  // padding: "5px 0",
+                  marginLeft: "16px",
                   // flexGrow: 1,
                   flexGrow: 1,
-                  marginRight: "-90px",
+                  marginRight: "-100px",
                 }}
               >
                 <Typography
@@ -219,9 +219,11 @@ const HeatmapComponent = () => {
                   flexGrow: 1,
                   marginLeft:
                     xLabel.label === "D1Q1"
-                      ? "-50px"
-                      : xLabel.label === "D2Q2" || xLabel.label === "D2Q1"
-                      ? "60px"
+                      ? "-4px"
+                      : xLabel.label === "D2Q2" ||
+                        xLabel.label === "D2Q1" ||
+                        xLabel.label === "D1Q2"
+                      ? "73px"
                       : 0,
                 }}
               >
@@ -259,6 +261,7 @@ const HeatmapComponent = () => {
               fontSize: ".80rem",
             })}
             yLabelsStyle={() => ({
+              marginTop: "5px",
               fontSize: ".90rem",
               textTransform: "uppercase",
               color: "#153f7b",

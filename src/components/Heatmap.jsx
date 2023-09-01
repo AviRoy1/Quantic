@@ -160,7 +160,7 @@ const HeatmapComponent = () => {
                   alignItems: "center",
                   width: "70px",
                   padding: "5px 0",
-                  marginLeft: "19px",
+                  marginLeft: "16px",
                   // flexGrow: 1,
                   flexGrow: 1,
                   marginRight: "-90px",
@@ -188,8 +188,10 @@ const HeatmapComponent = () => {
                   padding: "5px 0",
                   flexGrow: 1,
                   marginLeft:
-                    xLabel.label === "D2Q2" || xLabel.label === "D2Q1"
-                      ? "20px"
+                    xLabel.label === "D2Q2" ||
+                    xLabel.label === "D2Q2" ||
+                    xLabel.label === "D2Q1"
+                      ? "35px"
                       : 0,
                 }}
               >
@@ -227,8 +229,10 @@ const HeatmapComponent = () => {
               fontSize: ".80rem",
             })}
             yLabelsStyle={() => ({
+              marginTop: "5px",
               fontSize: ".90rem",
               textTransform: "uppercase",
+              // fontWeight: "bold",
               color: "#153f7b",
             })}
             cellStyle={(_x, _y, ratio) => {
