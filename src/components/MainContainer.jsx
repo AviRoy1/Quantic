@@ -8,8 +8,19 @@ import { TextField, Tabs, Tab, Box } from "@mui/material";
 import Navbar from "./NavBar";
 
 const MainContainer = () => {
-  const [selectedDate, setSelectedDate] = useState("");
+  const [selectedDate, setSelectedDate] = useState(null);
+  // let data = null;
+  const [data, setData] = useState(null);
+
   const handleDateChange = (event) => {
+    console.log(event.target.value);
+    try {
+      setData(require(`../${event.target.value}.json`));
+      // console.log("data-  ",data);
+    } catch (error) {
+      // console.log(error);
+    }
+    console.log("data --  ", data);
     setSelectedDate(event.target.value);
   };
 
@@ -49,7 +60,11 @@ const MainContainer = () => {
             backgroundColor: "#e4ebf3",
           }}
         >
-          <Heatmap />
+          {selectedDate !== null && data !== null ? (
+            <Heatmap jsonData={data} />
+          ) : (
+            <></>
+          )}
         </div>
 
         <div
@@ -142,34 +157,42 @@ const MainContainer = () => {
             </Box>
           </div>
 
-          <div
-            style={{
-              border: "1px solid rgb(204, 204, 204)",
-              backgroundColor: "rgb(228, 235, 243)",
-              margin: "8px",
-              flex: "1 1 0%",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
-            <LineChartComp index={index} />
-          </div>
-          <div
-            style={{
-              flex: 1,
-              border: "1px solid #ccc",
-              display: "flex",
-              justifyContent: "flex-start",
-              alignItems: "center",
-              backgroundColor: "#e4ebf3",
-              margin: "8px",
-              marginTop: "22px",
-            }}
-          >
-            <BarChart index={index} />
-            <BarandLineChart index={index} />
-          </div>
+          {selectedDate !== null && data !== null ? (
+            <>
+              <div
+                style={{
+                  border: "1px solid rgb(204, 204, 204)",
+                  backgroundColor: "rgb(228, 235, 243)",
+                  margin: "8px",
+                  flex: "1 1 0%",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
+                <LineChartComp index={index} dummyData={data} />
+              </div>
+              <div
+                style={{
+                  flex: 1,
+                  border: "1px solid #ccc",
+                  display: "flex",
+                  justifyContent: "flex-start",
+                  alignItems: "center",
+                  backgroundColor: "#e4ebf3",
+                  margin: "8px",
+                  marginTop: "22px",
+                }}
+              >
+                <BarChart index={index} dummyData={data} />
+                <BarandLineChart index={index} dummyData={data} />
+              </div>
+            </>
+          ) : (
+            <>
+              <div style={{ height: "60vh" }}></div>
+            </>
+          )}
         </div>
       </div>
     </>

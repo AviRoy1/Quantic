@@ -9,21 +9,38 @@ import Navbar from "../../components/NavBar";
 import data from "../../data.json";
 
 const Sha = () => {
-  const [selectedDate, setSelectedDate] = useState("");
+  const [selectedDate, setSelectedDate] = useState(null);
+  const [data, setData] = useState(null);
+
   const handleDateChange = (event) => {
+    try {
+      setData(require(`../../${event.target.value}.json`));
+      // console.log("data-  ",data);
+    } catch (error) {
+      // console.log(error);
+    }
+    console.log("date --  ", data);
     setSelectedDate(event.target.value);
   };
-  const obj = data["SHA"];
   let arr = [];
-  const [objData, setObjData] = React.useState(data["SHA"]);
-  Object.keys(obj).map((item) => {
-    if (obj[item].active === true) {
-      arr.push(item);
-    }
-  });
-  const [index, setIndex] = useState(arr.length > 0 ? arr[0] : null);
-  const [activeTab, setActiveTab] = useState(0);
 
+  const [activeTab, setActiveTab] = useState(0);
+  const [objData, setObjData] = React.useState(
+    data === null ? null : data["SHA"]
+  );
+  if (data !== null) {
+    const obj = data["SHA"];
+    // setObjData(data["SHA"]);
+    arr = [];
+    Object.keys(obj).map((item) => {
+      if (obj[item].active === true) {
+        arr.push(item);
+      }
+    });
+  }
+  const [index, setIndex] = useState(arr.length > 0 ? arr[0] : null);
+
+  // React.useEffect(() => {}, [data]);
   const handleTabChange = (event, newValue) => {
     setIndex(arr[newValue]);
     setActiveTab(newValue);
@@ -51,7 +68,11 @@ const Sha = () => {
             margin: "8px",
           }}
         >
-          <Heatmap objData={objData} />
+          {selectedDate !== null && data !== null ? (
+            <Heatmap objData={data["SHA"]} />
+          ) : (
+            <></>
+          )}
         </div>
 
         <div
@@ -148,35 +169,43 @@ const Sha = () => {
             </Box>
           </div>
 
-          <div
-            style={{
-              flex: 1,
-              // border: "1px solid #ccc",
-              display: "flex",
-              justifyContent: "flex-start",
-              alignItems: "space",
-              backgroundColor: "#e4ebf3",
-              // marginLeft: "8px",
-              marginRight: "8px",
-            }}
-          >
-            <LineChartComp index={index} />
-          </div>
-          <div
-            style={{
-              flex: 1,
-              border: "1px solid #ccc",
-              display: "flex",
-              justifyContent: "flex-start",
-              alignItems: "center",
-              backgroundColor: "#e4ebf3",
-              margin: "8px",
-              marginTop: "22px",
-            }}
-          >
-            {/* <BarChart index={index} /> */}
-            <BarandLineChart index={index} />
-          </div>
+          {selectedDate !== null && data !== null ? (
+            <>
+              <div
+                style={{
+                  flex: 1,
+                  // border: "1px solid #ccc",
+                  display: "flex",
+                  justifyContent: "flex-start",
+                  alignItems: "space",
+                  backgroundColor: "#e4ebf3",
+                  // marginLeft: "8px",
+                  marginRight: "8px",
+                }}
+              >
+                <LineChartComp index={index} dummyData={data} />
+              </div>
+              <div
+                style={{
+                  flex: 1,
+                  border: "1px solid #ccc",
+                  display: "flex",
+                  justifyContent: "flex-start",
+                  alignItems: "center",
+                  backgroundColor: "#e4ebf3",
+                  margin: "8px",
+                  marginTop: "22px",
+                }}
+              >
+                {/* <BarChart index={index} /> */}
+                <BarandLineChart index={index} dummyData={data} />
+              </div>
+            </>
+          ) : (
+            <>
+              <div style={{ height: "60vh" }}></div>
+            </>
+          )}
         </div>
       </div>
     </>

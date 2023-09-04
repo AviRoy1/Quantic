@@ -1,11 +1,11 @@
 import React from "react";
 import { HeatMapGrid } from "react-grid-heatmap";
 import { Box, Grid, Paper, Typography } from "@mui/material";
-import jsonData from "../data.json";
+// import jsonData from "../data.json";
 import { MdOutlineRadioButtonChecked } from "react-icons/md";
 import AccessibilityIcon from "@mui/icons-material/Accessibility";
 
-const HeatmapComponent = () => {
+const HeatmapComponent = ({ jsonData }) => {
   const d1GateStatus =
     jsonData["Entrance"]["D1Q1"]["Total_awt"] +
     jsonData["Entrance"]["D1Q2"]["Total_awt"];

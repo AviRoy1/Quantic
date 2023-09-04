@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import ReactApexChart from "react-apexcharts";
-import dummyData from "../data.json";
+// import dummyData from "../data.json";
 import { Box, Grid, Paper, Typography } from "@mui/material";
 import { ArrowDownward, ArrowUpward } from "@mui/icons-material";
 import waiting from "../Icons/WATINTG-01.svg";
 import totalpax from "../Icons/TOTAL TAX--01.svg";
-const LineChartComp = ({ index }) => {
+const LineChartComp = ({ index, dummyData }) => {
   let arr = [];
   let arr2 = [];
 
@@ -84,14 +84,38 @@ const LineChartComp = ({ index }) => {
         : dummyData.Entrance.D2Q2.awt_prev
     );
   });
-
-  const data = Object.values(dummyData.PSHA.Heatmap).map((item, index) => {
-    arr.push(item.Pax);
-    arr2.push(index + "-" + (index + 1));
-  });
+  let maxX = 0;
+  let data;
+  if (index === "D1Q1")
+    data = Object.values(dummyData.Entrance.D1Q1.Heatmap).map((item, index) => {
+      arr.push(item.Pax);
+      maxX = Math.max(item.Pax, maxX);
+      arr2.push(index + "-" + (index + 1));
+    });
+  else if (index === "D1Q2")
+    data = Object.values(dummyData.Entrance.D1Q2.Heatmap).map((item, index) => {
+      arr.push(item.Pax);
+      maxX = Math.max(item.Pax, maxX);
+      arr2.push(index + "-" + (index + 1));
+    });
+  else if (index === "D2Q1")
+    data = Object.values(dummyData.Entrance.D2Q1.Heatmap).map((item, index) => {
+      arr.push(item.Pax);
+      maxX = Math.max(item.Pax, maxX);
+      arr2.push(index + "-" + (index + 1));
+    });
+  else {
+    data = Object.values(dummyData.Entrance.D2Q2.Heatmap).map((item, index) => {
+      arr.push(item.Pax);
+      maxX = Math.max(item.Pax, maxX);
+      arr2.push(index + "-" + (index + 1));
+    });
+  }
   arr.pop();
   arr2.pop();
   const maxPeakIndex = arr.indexOf(Math.max(...arr));
+  let maxY = maxX + 25 - ((maxX + 25) % 25);
+  console.log(maxY);
 
   const series = [
     {
@@ -201,8 +225,8 @@ const LineChartComp = ({ index }) => {
         },
       },
       min: 0,
-      max: 100,
-      tickAmount: 4,
+      max: maxY,
+      tickAmount: maxY / 25,
       labels: {
         style: {
           fontSize: "12px",

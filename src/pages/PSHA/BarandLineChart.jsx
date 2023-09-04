@@ -1,8 +1,8 @@
 import React from "react";
 import ReactApexChart from "react-apexcharts";
-import dummyData from "../../data.json";
+// import dummyData from "../../data.json";
 
-const BarandLineChart = ({ index }) => {
+const BarandLineChart = ({ index, dummyData }) => {
   let arr = [];
   let arr2 = [];
   let arr3 = [];

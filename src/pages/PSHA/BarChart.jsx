@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import ReactApexChart from "react-apexcharts";
-import dummyData from "../../data.json";
+// import dummyData from "../../data.json";
 import { Typography } from "@mui/material";
 
-const BarChart = ({ index }) => {
+const BarChart = ({ index, dummyData }) => {
   const [chartData, setChartData] = useState({
     series: [
       {

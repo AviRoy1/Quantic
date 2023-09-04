@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
 import ReactApexChart from "react-apexcharts";
-import dummyData from "../../data.json";
+// import dummyData from "../../data.json";
 import { Box, Grid, Paper, Typography } from "@mui/material";
 import { ArrowDownward, ArrowUpward } from "@mui/icons-material";
 import waiting from "../../Icons/WATINTG-01.svg";
 import totalpax from "../../Icons/TOTAL TAX--01.svg";
-const LineChartComp = ({ index }) => {
+const LineChartComp = ({ index, dummyData }) => {
+  console.log("data- ", dummyData);
   let arr = [];
   let arr2 = [];
 
@@ -85,15 +86,38 @@ const LineChartComp = ({ index }) => {
     );
   });
 
-  const data = Object.values(dummyData.PSHA.Heatmap).map((item, index) => {
-    arr.push(item.Pax);
-    // let c = "am";
-    // if (index >= 12) c = "pm";
-    arr2.push(index + "-" + (index + 1));
-  });
+  let maxX = 0;
+  let data;
+  if (index === "D1Q1")
+    data = Object.values(dummyData.PSHA.D1Q1.Heatmap).map((item, index) => {
+      arr.push(item.Pax);
+      maxX = Math.max(item.Pax, maxX);
+      arr2.push(index + "-" + (index + 1));
+    });
+  else if (index === "D1Q2")
+    data = Object.values(dummyData.PSHA.D1Q2.Heatmap).map((item, index) => {
+      arr.push(item.Pax);
+      maxX = Math.max(item.Pax, maxX);
+      arr2.push(index + "-" + (index + 1));
+    });
+  else if (index === "D2Q1")
+    data = Object.values(dummyData.PSHA.D2Q1.Heatmap).map((item, index) => {
+      arr.push(item.Pax);
+      maxX = Math.max(item.Pax, maxX);
+      arr2.push(index + "-" + (index + 1));
+    });
+  else {
+    data = Object.values(dummyData.PSHA.D2Q2.Heatmap).map((item, index) => {
+      arr.push(item.Pax);
+      maxX = Math.max(item.Pax, maxX);
+      arr2.push(index + "-" + (index + 1));
+    });
+  }
   arr.pop();
   arr2.pop();
   const maxPeakIndex = arr.indexOf(Math.max(...arr));
+  let maxY = maxX + 25 - ((maxX + 25) % 25);
+  console.log(maxY);
 
   const series = [
     {
@@ -162,7 +186,7 @@ const LineChartComp = ({ index }) => {
         color: "#153f7b",
         fontWeight: "bold",
       },
-      offsetX: 18,
+      offsetX: 15,
       offsetY: 5,
     },
     grid: {
@@ -174,7 +198,7 @@ const LineChartComp = ({ index }) => {
     xaxis: {
       categories: arr2,
       title: {
-        text: "Time(Hour)",
+        text: " Time(Hour)",
         style: {
           fontSize: "14px",
           fontWeight: "bold",
@@ -203,12 +227,9 @@ const LineChartComp = ({ index }) => {
         },
       },
       min: 0,
-      max: 100, // Set the maximum value
-      tickAmount: 4,
+      max: maxY,
+      tickAmount: maxY / 25,
       labels: {
-        // formatter: (value) => {
-        //   return (value * 25).toFixed(0); // Calculate the tick label based on interval of 25
-        // },
         style: {
           fontSize: "12px",
           fontWeight: "bold",
@@ -219,7 +240,6 @@ const LineChartComp = ({ index }) => {
       colors: ["white"],
     },
   };
-
   const chartHeight = 250;
   const boxHeight = 60;
 

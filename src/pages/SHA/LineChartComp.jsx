@@ -1,23 +1,25 @@
 import React, { useEffect, useState } from "react";
 import ReactApexChart from "react-apexcharts";
-import dummyData from "../../data.json";
+// import dummyData from "../../data.json";
 import { Box, Grid, Paper, Typography } from "@mui/material";
 import { ArrowDownward, ArrowUpward } from "@mui/icons-material";
 import waiting from "../../Icons/WATINTG-01.svg";
 import totalpax from "../../Icons/TOTAL TAX--01.svg";
-const LineChartComp = ({ index }) => {
-  // console.log("debug--  ", index);
+const LineChartComp = ({ index, dummyData }) => {
+  console.log("debug--  ", dummyData, index);
   let arr = [];
   let arr2 = [];
   // const data =
-  const data = Object.values(dummyData.SHA[index].Heatmap).map(
-    (item, index) => {
-      arr.push(item.Pax);
-      // let c = "am";
-      // if (index >= 12) c = "pm";
-      arr2.push(index + "-" + (index + 1));
-    }
-  );
+  if (index !== null) {
+    const data = Object.values(dummyData.SHA[index].Heatmap).map(
+      (item, index) => {
+        arr.push(item.Pax);
+        // let c = "am";
+        // if (index >= 12) c = "pm";
+        arr2.push(index + "-" + (index + 1));
+      }
+    );
+  }
   arr.pop();
   arr2.pop();
   const maxPeakIndex = arr.indexOf(Math.max(...arr));
