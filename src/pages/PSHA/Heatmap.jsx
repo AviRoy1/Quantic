@@ -1,12 +1,12 @@
 import React from "react";
 import { HeatMapGrid } from "react-grid-heatmap";
 import { Typography } from "@mui/material";
-import jsonData from "../../data.json";
+// import jsonData from "../../data.json";
 import person from "../../Icons/person-svgrepo-com.svg";
 import profileCicle from "../../Icons/profile-circle-svgrepo-com (2).svg";
 import AccessibilityIcon from "@mui/icons-material/Accessibility";
 
-const HeatmapComponent = () => {
+const HeatmapComponent = ({jsonData}) => {
   // const xLabels = ["D1Q1", "D1Q2", "D2Q1", "D2Q2"];
   const d1q1 = jsonData["PSHA"]["D1Q1"].manned;
   const d1q2 = jsonData["PSHA"]["D1Q2"].manned;

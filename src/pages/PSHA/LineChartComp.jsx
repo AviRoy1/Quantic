@@ -136,6 +136,23 @@ const LineChartComp = ({ index, dummyData }) => {
   ];
 
   const options = {
+    tooltip: {
+      enabled: true,
+      shared: false,
+
+      x: {
+        show: true,
+
+        formatter: function (value) {
+          return "Time: " + value;
+        },
+      },
+      y: {
+        formatter: function (value) {
+          return "PAX: " + value * 100;
+        },
+      },
+    },
     chart: {
       toolbar: {
         show: false,
@@ -228,7 +245,7 @@ const LineChartComp = ({ index, dummyData }) => {
       },
       min: 0,
       max: maxY,
-      tickAmount: maxY / 25,
+      tickAmount: maxY / 5,
       labels: {
         style: {
           fontSize: "12px",

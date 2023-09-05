@@ -10,12 +10,12 @@ const LineChartComp = ({ index, dummyData }) => {
   let arr = [];
   let arr2 = [];
   // const data =
+  let maxX = 0;
   if (index !== null) {
     const data = Object.values(dummyData.SHA[index].Heatmap).map(
       (item, index) => {
         arr.push(item.Pax);
-        // let c = "am";
-        // if (index >= 12) c = "pm";
+        maxX = Math.max(item.Pax, maxX);
         arr2.push(index + "-" + (index + 1));
       }
     );
@@ -41,6 +41,23 @@ const LineChartComp = ({ index, dummyData }) => {
   ];
 
   const options = {
+    tooltip: {
+      enabled: true,
+      shared: false,
+
+      x: {
+        show: true,
+
+        formatter: function (value) {
+          return "Time: " + value;
+        },
+      },
+      y: {
+        formatter: function (value) {
+          return "PAX: " + value * 100;
+        },
+      },
+    },
     chart: {
       toolbar: {
         show: false,
@@ -132,8 +149,8 @@ const LineChartComp = ({ index, dummyData }) => {
         },
       },
       min: 0,
-      max: 100, // Set the maximum value
-      tickAmount: 4,
+      max: maxX,
+      tickAmount: maxX / 5,
       labels: {
         // formatter: (value) => {
         //   return (value * 25).toFixed(0); // Calculate the tick label based on interval of 25
