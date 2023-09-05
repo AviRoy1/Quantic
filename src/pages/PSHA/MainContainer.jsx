@@ -8,12 +8,22 @@ import { TextField, Tabs, Tab, Box } from "@mui/material";
 import Navbar from "../../components/NavBar";
 
 const Psha = () => {
-  const [selectedDate, setSelectedDate] = useState("");
+  const getCurrentDate = () => {
+    const currentDate = new Date();
+    const year = currentDate.getFullYear();
+    const month = String(currentDate.getMonth() + 1).padStart(2, "0");
+    const day = String(currentDate.getDate()).padStart(2, "0");
+    return `${year}-${month}-${day}`;
+  };
+  const [selectedDate, setSelectedDate] = useState(getCurrentDate());
 
-  const [data, setData] = useState(null);
+  const [data, setData] = useState(
+    require(`../${selectedDate}.json`) === null
+      ? null
+      : require(`../${selectedDate}.json`)
+  );
 
   const handleDateChange = (event) => {
-    console.log(event.target.value);
     try {
       setData(require(`../../${event.target.value}.json`));
       // console.log("data-  ",data);

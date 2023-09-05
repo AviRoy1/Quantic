@@ -9,8 +9,20 @@ import Navbar from "../../components/NavBar";
 import data from "../../data.json";
 
 const Sha = () => {
-  const [selectedDate, setSelectedDate] = useState(null);
-  const [data, setData] = useState(null);
+  const getCurrentDate = () => {
+    const currentDate = new Date();
+    const year = currentDate.getFullYear();
+    const month = String(currentDate.getMonth() + 1).padStart(2, "0");
+    const day = String(currentDate.getDate()).padStart(2, "0");
+    return `${year}-${month}-${day}`;
+  };
+  const [selectedDate, setSelectedDate] = useState(getCurrentDate());
+
+  const [data, setData] = useState(
+    require(`../${selectedDate}.json`) === null
+      ? null
+      : require(`../${selectedDate}.json`)
+  );
 
   const handleDateChange = (event) => {
     try {

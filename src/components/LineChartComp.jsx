@@ -114,7 +114,7 @@ const LineChartComp = ({ index, dummyData }) => {
   arr.pop();
   arr2.pop();
   const maxPeakIndex = arr.indexOf(Math.max(...arr));
-  let maxY = maxX + 25 - ((maxX + 25) % 25);
+  let maxY = maxX + 5 - ((maxX + 5) % 5);
   console.log(maxY);
 
   const series = [

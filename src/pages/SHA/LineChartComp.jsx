@@ -23,7 +23,7 @@ const LineChartComp = ({ index, dummyData }) => {
   arr.pop();
   arr2.pop();
   const maxPeakIndex = arr.indexOf(Math.max(...arr));
-
+  let maxY = maxX + 5 - ((maxX + 5) % 5);
   const series = [
     {
       name: "PAX (1x100)/hr",
@@ -149,8 +149,8 @@ const LineChartComp = ({ index, dummyData }) => {
         },
       },
       min: 0,
-      max: maxX,
-      tickAmount: maxX / 5,
+      max: maxY,
+      tickAmount: maxY / 5,
       labels: {
         // formatter: (value) => {
         //   return (value * 25).toFixed(0); // Calculate the tick label based on interval of 25
