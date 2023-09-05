@@ -4,7 +4,7 @@ import LineChartComp from "./LineChartComp";
 import BarChart from "./BarChart";
 import BarandLineChart from "./BarandLineChart";
 import { DatePicker } from "@mui/lab";
-import { TextField, Tabs, Tab, Box } from "@mui/material";
+import { TextField, Tabs, Tab, Box, Typography } from "@mui/material";
 import Navbar from "../../components/NavBar";
 
 const Psha = () => {
@@ -198,9 +198,19 @@ const Psha = () => {
             </>
           ) : (
             <>
-              <div style={{ height: "60vh", padding: "16px" }}>
+              <div
+                style={{
+                  height: "60vh",
+                  padding: "16px",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
                 {" "}
-                {`No data is present for ${selectedDate}`}{" "}
+                <Typography variant="h4">
+                  {`No data is present for ${selectedDate}`}{" "}
+                </Typography>
               </div>
             </>
           )}
