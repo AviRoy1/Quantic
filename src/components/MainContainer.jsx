@@ -18,9 +18,10 @@ const MainContainer = () => {
   const [selectedDate, setSelectedDate] = useState(getCurrentDate());
   // let data = null;
   const [data, setData] = useState(
-    require(`../${selectedDate}.json`) === null
-      ? null
-      : require(`../${selectedDate}.json`)
+    // require(`../${selectedDate}.json`) === null
+    //   ?
+    null
+    // : require(`../${selectedDate}.json`)
   );
 
   const handleDateChange = (event) => {
