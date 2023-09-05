@@ -208,7 +208,6 @@ const MainContainer = () => {
                   height: "60vh",
                   padding: "16px",
                   display: "flex",
-
                   alignItems: "center",
                   justifyContent: "center",
                 }}
