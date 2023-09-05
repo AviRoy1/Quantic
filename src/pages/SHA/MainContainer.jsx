@@ -216,7 +216,10 @@ const Sha = () => {
             </>
           ) : (
             <>
-              <div style={{ height: "60vh" }}></div>
+              <div style={{ height: "60vh", padding: "16px" }}>
+                {" "}
+                {`No data is present for ${selectedDate}`}{" "}
+              </div>
             </>
           )}
         </div>
