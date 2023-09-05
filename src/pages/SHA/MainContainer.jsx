@@ -19,9 +19,10 @@ const Sha = () => {
   const [selectedDate, setSelectedDate] = useState(getCurrentDate());
 
   const [data, setData] = useState(
-    require(`../../${selectedDate}.json`) === null
-      ? null
-      : require(`../../${selectedDate}.json`)
+    // require(`../../${selectedDate}.json`) === null
+    //   ?
+    null
+    // : require(`../../${selectedDate}.json`)
   );
 
   const handleDateChange = (event) => {
