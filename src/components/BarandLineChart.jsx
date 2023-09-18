@@ -8,7 +8,7 @@ const BarandLineChart = ({ index, dummyData }) => {
   let arr2 = [];
   let arr3 = [];
   // console.log(dummyData.Entrance[index].Heatmap);
-  const data = Object.values(dummyData.Entrance[index].Heatmap).map(
+  const data = Object.values(dummyData?.Entrance[index]?.Heatmap).map(
     (item, index) => {
       arr2.push(item.AWT);
       arr3.push(item.APT > 7 ? item.APT : 0);

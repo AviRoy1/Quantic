@@ -182,7 +182,7 @@ const Sha = () => {
             </Box>
           </div>
 
-          {selectedDate !== null && data !== null ? (
+          {selectedDate !== null && data !== null && index !== null ? (
             <>
               <div
                 style={{
@@ -210,7 +210,6 @@ const Sha = () => {
                   marginTop: "22px",
                 }}
               >
-                {/* <BarChart index={index} /> */}
                 <BarandLineChart index={index} dummyData={data} />
               </div>
             </>

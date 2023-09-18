@@ -2,16 +2,18 @@ import React from "react";
 import ReactApexChart from "react-apexcharts";
 // import dummyData from "../../data.json";
 
-const BarandLineChart = ({ dummyData }) => {
+const BarandLineChart = ({ index, dummyData }) => {
   let arr = [];
   let arr2 = [];
   let arr3 = [];
-
-  const data = Object.values(dummyData.Entrance.Heatmap).map((item, index) => {
-    arr2.push(item.AWT);
-    arr3.push(item.APT);
-    arr.push(index);
-  });
+  console.log("jjj--  ", index, dummyData);
+  const data = Object.values(dummyData?.SHA[index]?.Heatmap).map(
+    (item, index) => {
+      arr2.push(item.AWT);
+      arr3.push(item.APT);
+      arr.push(index);
+    }
+  );
 
   const options = {
     chart: {
