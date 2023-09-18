@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { HeatMapGrid } from "react-grid-heatmap";
 import { Box, Grid, Paper, Typography } from "@mui/material";
 // import jsonData from "../data.json";
@@ -16,6 +16,18 @@ const HeatmapComponent = ({ jsonData }) => {
   const d1q2 = jsonData["Entrance"]["D1Q2"].manned;
   const d2q1 = jsonData["Entrance"]["D2Q1"].manned;
   const d2q2 = jsonData["Entrance"]["D2Q2"].manned;
+  useEffect(() => {
+    const d1GateStatus =
+      jsonData["Entrance"]["D1Q1"]["Total_awt"] +
+      jsonData["Entrance"]["D1Q2"]["Total_awt"];
+    const d2GateStatus =
+      jsonData["Entrance"]["D2Q1"]["Total_awt"] +
+      jsonData["Entrance"]["D2Q2"]["Total_awt"];
+    const d1q1 = jsonData["Entrance"]["D1Q1"].manned;
+    const d1q2 = jsonData["Entrance"]["D1Q2"].manned;
+    const d2q1 = jsonData["Entrance"]["D2Q1"].manned;
+    const d2q2 = jsonData["Entrance"]["D2Q2"].manned;
+  }, [jsonData]);
 
   const currentHour = new Date().getHours();
   const yLabels = [];
@@ -90,6 +102,27 @@ const HeatmapComponent = ({ jsonData }) => {
   };
 
   xLabels.unshift(newLabel);
+
+  // useEffect(() => {
+  //   for (let i = currentHour; i >= currentHour - 23; i--) {
+  //     const hour = (24 + i) % 24;
+  //     yLabels.push(`${hour}`);
+
+  //     const xData = xLabels.map((xLabel) => {
+  //       const yIndex = (24 + i - currentHour + 23) % 24;
+
+  //       return jsonData["Entrance"][xLabel.label]["Heatmap"][hour.toString()][
+  //         "Pax"
+  //       ];
+  //     });
+  //     data.push(xData);
+  //   }
+  //   const newLabel = {
+  //     label: "Hour",
+  //   };
+
+  //   xLabels.unshift(newLabel);
+  // }, [jsonData]);
 
   return (
     <div

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Heatmap from "./Heatmap";
 import LineChartComp from "./LineChartComp";
 import BarChart from "./BarChart";
@@ -24,6 +24,27 @@ const MainContainer = () => {
     // : require(`../${selectedDate}.json`)
   );
 
+  const fetchData = async () => {
+    try {
+      const response = await fetch(`../${selectedDate}.json`);
+      const jsonData = await response.json();
+      setData(jsonData);
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
+  };
+
+  useEffect(() => {
+    // Fetch data initially and then every 30 seconds
+    fetchData();
+    const intervalId = setInterval(fetchData, 30000);
+
+    return () => {
+      // Clear the interval when the component unmounts
+      clearInterval(intervalId);
+    };
+  }, [selectedDate]);
+
   const handleDateChange = (event) => {
     setSelectedDate(null);
     setData(null);
@@ -33,7 +54,6 @@ const MainContainer = () => {
     } catch (error) {
       // console.log(error);
     }
-    console.log("data --  ", data);
     setSelectedDate(event.target.value);
   };
 
