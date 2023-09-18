@@ -6,8 +6,9 @@ import BarandLineChart from "./BarandLineChart";
 import { DatePicker } from "@mui/lab";
 import { TextField, Tabs, Tab, Box, Typography } from "@mui/material";
 import Navbar from "./NavBar";
+import { useDispatch } from "react-redux";
 
-const MainContainer = () => {
+const MainContainer = ({ temp }) => {
   const getCurrentDate = () => {
     const currentDate = new Date();
     const year = currentDate.getFullYear();
@@ -20,30 +21,23 @@ const MainContainer = () => {
   const [data, setData] = useState(
     // require(`../${selectedDate}.json`) === null
     //   ?
-    null
+    temp
     // : require(`../${selectedDate}.json`)
   );
 
   const fetchData = async () => {
     try {
-      const response = await fetch(`../${selectedDate}.json`);
-      const jsonData = await response.json();
-      setData(jsonData);
+      const response = require(`../${selectedDate}.json`);
+      // const jsonData = await response.json();
+      setData(response);
     } catch (error) {
       console.error("Error fetching data:", error);
     }
   };
 
   useEffect(() => {
-    // Fetch data initially and then every 30 seconds
     fetchData();
-    const intervalId = setInterval(fetchData, 30000);
-
-    return () => {
-      // Clear the interval when the component unmounts
-      clearInterval(intervalId);
-    };
-  }, [selectedDate]);
+  }, []);
 
   const handleDateChange = (event) => {
     setSelectedDate(null);
@@ -57,7 +51,7 @@ const MainContainer = () => {
     setSelectedDate(event.target.value);
   };
 
-  const [index, setIndex] = useState("D1Q2");
+  const [index, setIndex] = useState("D1Q1");
   const [activeTab, setActiveTab] = useState(0);
 
   const handleTabChange = (event, newValue) => {

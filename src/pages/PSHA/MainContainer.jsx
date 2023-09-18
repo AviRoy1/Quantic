@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Heatmap from "./Heatmap";
 import LineChartComp from "./LineChartComp";
 import BarChart from "./BarChart";
@@ -7,7 +7,7 @@ import { DatePicker } from "@mui/lab";
 import { TextField, Tabs, Tab, Box, Typography } from "@mui/material";
 import Navbar from "../../components/NavBar";
 
-const Psha = () => {
+const Psha = ({ temp }) => {
   const getCurrentDate = () => {
     const currentDate = new Date();
     const year = currentDate.getFullYear();
@@ -20,9 +20,23 @@ const Psha = () => {
   const [data, setData] = useState(
     // require(`../../${selectedDate}.json`) === null
     //   ?
-    null
+    temp
     // : require(`../../${selectedDate}.json`)
   );
+
+  const fetchData = async () => {
+    try {
+      const response = require(`../${selectedDate}.json`);
+      console.log("response-", response);
+      setData(response);
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
+  };
+
+  useEffect(() => {
+    fetchData();
+  }, []);
 
   const handleDateChange = (event) => {
     try {
@@ -35,7 +49,7 @@ const Psha = () => {
     setSelectedDate(event.target.value);
   };
 
-  const [index, setIndex] = useState("D1Q2");
+  const [index, setIndex] = useState("D1Q1");
   const [activeTab, setActiveTab] = useState(0);
 
   const handleTabChange = (event, newValue) => {

@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import {
   AppBar,
   Toolbar,
@@ -26,6 +25,7 @@ import CircleIcon from "@mui/icons-material/Circle";
 import MainContainer from "./MainContainer";
 import Psha from "../pages/PSHA/MainContainer";
 import Sha from "../pages/SHA/MainContainer";
+import React, { useEffect, useState } from "react";
 
 const Navbar = () => {
   const [anchorEl, setAnchorEl] = useState(null);
@@ -48,6 +48,33 @@ const Navbar = () => {
     console.log(text);
     setSelectedItem(text);
   };
+  const getCurrentDate = () => {
+    const currentDate = new Date();
+    const year = currentDate.getFullYear();
+    const month = String(currentDate.getMonth() + 1).padStart(2, "0");
+    const day = String(currentDate.getDate()).padStart(2, "0");
+    return `${year}-${month}-${day}`;
+  };
+  const [selectedDate, setSelectedDate] = useState(getCurrentDate());
+  const [data, setData] = useState(null); // Initialize data with null or an initial value
+  let jsonData;
+  const fetchData = async () => {
+    try {
+      const response = require(`../${selectedDate}.json`);
+      jsonData = response;
+      setData(jsonData); // Update data when new data is fetched
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
+  };
+  useEffect(() => {
+    fetchData();
+    // console.log("data val-  ", data);
+    setData(jsonData);
+    const intervalId = setInterval(fetchData, 20000);
+
+    return () => clearInterval(intervalId);
+  }, []);
 
   const toggleDrawer = (open) => (event) => {
     if (
@@ -374,11 +401,11 @@ const Navbar = () => {
         {list()}
       </Drawer>
       {selectedItem === "Entry-Gate" ? (
-        <MainContainer />
+        <MainContainer temp={data} />
       ) : selectedItem === "PSHA" ? (
-        <Psha />
+        <Psha temp={data} />
       ) : (
-        <Sha />
+        <Sha temp={data} />
       )}
     </div>
   );
