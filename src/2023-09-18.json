@@ -960,7 +960,7 @@
       }
     },
     "F6": {
-      "active": false,
+      "active": true,
       "Heatmap": {
         "0": {
           "Pax": 0,
