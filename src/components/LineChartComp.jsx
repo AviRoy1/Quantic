@@ -119,7 +119,7 @@ const LineChartComp = ({ index, dummyData }) => {
 
   const series = [
     {
-      name: "PAX (1x100)/hr",
+      name: "PAX/hr",
       data: arr,
       markers: {
         size: 4,
@@ -235,7 +235,7 @@ const LineChartComp = ({ index, dummyData }) => {
     },
     yaxis: {
       title: {
-        text: "PAX (1x100)/hr",
+        text: "PAX/hr",
         style: {
           fontSize: "14px",
           fontWeight: "bold",
