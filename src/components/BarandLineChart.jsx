@@ -3,7 +3,6 @@ import ReactApexChart from "react-apexcharts";
 import dummyData from "../data.json";
 
 const BarandLineChart = ({ index, dummyData }) => {
-  console.log("Debug--  ", dummyData);
   let arr = [];
   let arr2 = [];
   let arr3 = [];

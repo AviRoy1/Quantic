@@ -16,18 +16,18 @@ const Psha = ({ temp }) => {
     return `${year}-${month}-${day}`;
   };
   const [selectedDate, setSelectedDate] = useState(getCurrentDate());
-
+  // let data = null;
   const [data, setData] = useState(
-    // require(`../../${selectedDate}.json`) === null
+    // require(`../${selectedDate}.json`) === null
     //   ?
     temp
-    // : require(`../../${selectedDate}.json`)
+    // : require(`../${selectedDate}.json`)
   );
 
   const fetchData = async () => {
     try {
-      const response = require(`../${selectedDate}.json`);
-      console.log("response-", response);
+      const response = require(`../../${selectedDate}.json`);
+      // const jsonData = await response.json();
       setData(response);
     } catch (error) {
       console.error("Error fetching data:", error);
@@ -39,13 +39,14 @@ const Psha = ({ temp }) => {
   }, []);
 
   const handleDateChange = (event) => {
+    setSelectedDate(null);
+    setData(null);
     try {
-      setData(require(`../../${event.target.value}.json`));
+      setData(require(`../${event.target.value}.json`));
       // console.log("data-  ",data);
     } catch (error) {
       // console.log(error);
     }
-    console.log("date --  ", data);
     setSelectedDate(event.target.value);
   };
 

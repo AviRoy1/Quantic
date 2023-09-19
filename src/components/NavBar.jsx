@@ -69,7 +69,7 @@ const Navbar = () => {
   };
   useEffect(() => {
     fetchData();
-    // console.log("data val-  ", data);
+    console.log("data val-  ", data);
     setData(jsonData);
     const intervalId = setInterval(fetchData, 20000);
 
