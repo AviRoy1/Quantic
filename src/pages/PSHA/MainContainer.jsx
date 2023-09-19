@@ -42,7 +42,7 @@ const Psha = ({ temp }) => {
     setSelectedDate(null);
     setData(null);
     try {
-      setData(require(`../${event.target.value}.json`));
+      setData(require(`../../${event.target.value}.json`));
       // console.log("data-  ",data);
     } catch (error) {
       // console.log(error);

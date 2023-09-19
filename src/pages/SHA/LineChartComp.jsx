@@ -54,7 +54,7 @@ const LineChartComp = ({ index, dummyData }) => {
       },
       y: {
         formatter: function (value) {
-          return "PAX: " + value * 100;
+          return "PAX: " + value;
         },
       },
     },
@@ -150,7 +150,7 @@ const LineChartComp = ({ index, dummyData }) => {
       },
       min: 0,
       max: maxY,
-      tickAmount: maxY / 5,
+      tickAmount: 6,
       labels: {
         // formatter: (value) => {
         //   return (value * 25).toFixed(0); // Calculate the tick label based on interval of 25

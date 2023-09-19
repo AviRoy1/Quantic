@@ -147,7 +147,7 @@ const LineChartComp = ({ index, dummyData }) => {
       },
       y: {
         formatter: function (value) {
-          return "PAX: " + value * 100;
+          return "PAX: " + value;
         },
       },
     },
@@ -243,7 +243,7 @@ const LineChartComp = ({ index, dummyData }) => {
       },
       min: 0,
       max: maxY,
-      tickAmount: maxY / 5,
+      tickAmount: 6,
       labels: {
         style: {
           fontSize: "12px",

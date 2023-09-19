@@ -6,7 +6,7 @@ import { ArrowDownward, ArrowUpward } from "@mui/icons-material";
 import waiting from "../../Icons/WATINTG-01.svg";
 import totalpax from "../../Icons/TOTAL TAX--01.svg";
 const LineChartComp = ({ index, dummyData }) => {
-  console.log("data- ", dummyData);
+  // console.log("data- ", dummyData);
   let arr = [];
   let arr2 = [];
 
@@ -117,7 +117,7 @@ const LineChartComp = ({ index, dummyData }) => {
   arr2.pop();
   const maxPeakIndex = arr.indexOf(Math.max(...arr));
   let maxY = maxX + 5 - ((maxX + 5) % 5);
-  console.log(maxY);
+  // console.log(maxY);
 
   const series = [
     {
@@ -149,7 +149,7 @@ const LineChartComp = ({ index, dummyData }) => {
       },
       y: {
         formatter: function (value) {
-          return "PAX: " + value * 100;
+          return "PAX: " + value;
         },
       },
     },
@@ -245,7 +245,7 @@ const LineChartComp = ({ index, dummyData }) => {
       },
       min: 0,
       max: maxY,
-      tickAmount: maxY / 5,
+      tickAmount: 6,
       labels: {
         style: {
           fontSize: "12px",
@@ -334,7 +334,7 @@ const LineChartComp = ({ index, dummyData }) => {
             </div>
             <Grid container alignItems="center" marginTop={"10px"}>
               <Grid item xs={5}>
-                {(((maxpax - prv) / maxpax) * 100).toFixed(2) > 0 ? (
+                {((maxpax - prv) / maxpax).toFixed(2) > 0 ? (
                   <Typography ml={1} color="green">
                     <Typography variant="h5">{maxpax}</Typography>
                   </Typography>
@@ -350,19 +350,19 @@ const LineChartComp = ({ index, dummyData }) => {
               </Grid>
               <Grid item xs={5}>
                 <Box display="flex" alignItems="center">
-                  {(((maxpax - prv) / maxpax) * 100).toFixed(2) > 0 ? (
+                  {((maxpax - prv) / maxpax).toFixed(2) > 0 ? (
                     <ArrowUpward color="success" />
                   ) : (
                     <ArrowDownward color="error" />
                   )}
 
-                  {(((maxpax - prv) / maxpax) * 100).toFixed(2) > 0 ? (
+                  {((maxpax - prv) / maxpax).toFixed(2) > 0 ? (
                     <Typography ml={1} color="green" variant="h7">
-                      {(((maxpax - prv) / maxpax) * 100).toFixed(2)}%
+                      {((maxpax - prv) / maxpax).toFixed(2)}%
                     </Typography>
                   ) : (
                     <Typography ml={1} variant="h7" color="red">
-                      {(((maxpax - prv) / maxpax) * 100).toFixed(2)}%
+                      {((maxpax - prv) / maxpax).toFixed(2)}%
                     </Typography>
                   )}
                 </Box>
@@ -421,7 +421,7 @@ const LineChartComp = ({ index, dummyData }) => {
             </div>
             <Grid container alignItems="center" marginTop={"10px"}>
               <Grid item xs={5}>
-                {(((curAWT - prvAWT) / curAWT) * 100).toFixed(2) < 0 ? (
+                {((curAWT - prvAWT) / curAWT).toFixed(2) < 0 ? (
                   <Typography variant="h5" color="red">
                     {curAWT}mins
                   </Typography>
@@ -437,19 +437,19 @@ const LineChartComp = ({ index, dummyData }) => {
               </Grid>
               <Grid item xs={5}>
                 <Box display="flex" alignItems="center">
-                  {(((curAWT - prvAWT) / curAWT) * 100).toFixed(2) > 0 ? (
+                  {((curAWT - prvAWT) / curAWT).toFixed(2) > 0 ? (
                     <ArrowUpward color="success" />
                   ) : (
                     <ArrowDownward color="error" />
                   )}
 
-                  {(((curAWT - prvAWT) / curAWT) * 100).toFixed(2) < 0 ? (
+                  {((curAWT - prvAWT) / curAWT).toFixed(2) < 0 ? (
                     <Typography variant="h7" color="red">
-                      {(((curAWT - prvAWT) / curAWT) * 100).toFixed(2)}
+                      {((curAWT - prvAWT) / curAWT).toFixed(2)}
                     </Typography>
                   ) : (
                     <Typography variant="h7" color="green">
-                      {(((curAWT - prvAWT) / curAWT) * 100).toFixed(2)}
+                      {((curAWT - prvAWT) / curAWT).toFixed(2)}
                     </Typography>
                   )}
                 </Box>
