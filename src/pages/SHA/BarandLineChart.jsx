@@ -10,7 +10,7 @@ const BarandLineChart = ({ index, dummyData }) => {
   const data = Object.values(dummyData?.SHA[index]?.Heatmap).map(
     (item, index) => {
       arr2.push(item.AWT);
-      arr3.push(item.APT);
+      arr3.push(`${item.APT} sec`);
       arr.push(index);
     }
   );
@@ -69,7 +69,7 @@ const BarandLineChart = ({ index, dummyData }) => {
           },
         },
         title: {
-          text: "minutes",
+          text: "Seconds",
           style: {
             color: "black",
           },
@@ -79,7 +79,7 @@ const BarandLineChart = ({ index, dummyData }) => {
         },
       },
       {
-        seriesName: "Average Processing Time",
+        seriesName: "Average Processing Time in sec.",
         align: "left",
         offsetX: 2,
         axisTicks: {
@@ -103,12 +103,36 @@ const BarandLineChart = ({ index, dummyData }) => {
         offsetY: 30,
         offsetX: 60,
       },
+      custom: function ({ series, seriesIndex, dataPointIndex, w }) {
+        if (dataPointIndex !== undefined) {
+          return `${series[seriesIndex][dataPointIndex]} second`;
+        } else {
+          // Default tooltip content when not hovering over a bar
+          return "Default Tooltip";
+        }
+      },
+      style: {
+        fontSize: "14px",
+        fontFamily: "Arial, sans-serif",
+        color: "#ffffff", // Text color
+        background: "#333", // Background color
+        padding: "10px", // Padding around the tooltip content
+        borderRadius: "5px", // Border radius
+        boxShadow: "2px 2px 6px rgba(0, 0, 0, 0.3)", // Box shadow
+      },
     },
     legend: {
       horizontalAlign: "left",
       offsetX: 40,
+      labels: {
+        colors: ["#153f7b", "#707070"], // Change legend item colors here
+      },
+      markers: {
+        fillColors: ["#153f7b", "#707070"], // Change legend marker colors here
+        radius: 12, // Adjust the marker radius as needed
+        strokeWidth: 0, // Remove the marker stroke
+      },
     },
-    colors: ["#153f7b", "#707070"],
   };
 
   const series = [

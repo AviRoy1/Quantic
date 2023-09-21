@@ -53,9 +53,9 @@ const Sha = ({ temp }) => {
   let arr = [];
 
   const [activeTab, setActiveTab] = useState(0);
-  const [objData, setObjData] = React.useState(
-    data === null ? null : data["SHA"]
-  );
+  // const [objData, setObjData] = React.useState(
+  //   data === null || data === undefined ? null : data["SHA"]
+  // );
   if (data !== null) {
     const obj = data["SHA"];
     // setObjData(data["SHA"]);
