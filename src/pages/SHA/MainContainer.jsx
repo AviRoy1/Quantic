@@ -61,9 +61,9 @@ const Sha = ({ temp }) => {
     // setObjData(data["SHA"]);
     arr = [];
     Object.keys(obj).map((item) => {
-      if (obj[item].active === true) {
-        arr.push(item);
-      }
+      // if (obj[item].active === true) {
+      arr.push(item);
+      // }
     });
   }
   const [index, setIndex] = useState(arr.length > 0 ? arr[0] : null);
