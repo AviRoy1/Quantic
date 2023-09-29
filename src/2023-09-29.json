@@ -2569,9 +2569,9 @@
       "active": true,
       "Heatmap": {
         "0": {
-          "Pax": 0,
-          "AWT": 0,
-          "APT": 0,
+          "Pax": 10,
+          "AWT": 20,
+          "APT": 30,
           "AWT_IDs": {},
           "APT_IDs": {}
         },
@@ -2590,9 +2590,9 @@
           "APT_IDs": {}
         },
         "3": {
-          "Pax": 0,
-          "AWT": 0,
-          "APT": 0,
+          "Pax": 20,
+          "AWT": 20,
+          "APT": 20,
           "AWT_IDs": {},
           "APT_IDs": {}
         },
@@ -2792,9 +2792,9 @@
           "APT_IDs": {}
         },
         "1": {
-          "Pax": 0,
-          "AWT": 0,
-          "APT": 0,
+          "Pax": 30,
+          "AWT": 40,
+          "APT": 10,
           "AWT_IDs": {},
           "APT_IDs": {}
         },
@@ -2806,9 +2806,9 @@
           "APT_IDs": {}
         },
         "3": {
-          "Pax": 0,
-          "AWT": 0,
-          "APT": 0,
+          "Pax": 40,
+          "AWT": 60,
+          "APT": 50,
           "AWT_IDs": {},
           "APT_IDs": {}
         },
@@ -2997,8 +2997,8 @@
       "active": true,
       "Heatmap": {
         "0": {
-          "Pax": 0,
-          "AWT": 0,
+          "Pax": 30,
+          "AWT": 20,
           "APT": 0,
           "AWT_IDs": {},
           "APT_IDs": {}
@@ -3209,9 +3209,9 @@
       "active": true,
       "Heatmap": {
         "0": {
-          "Pax": 0,
-          "AWT": 0,
-          "APT": 0,
+          "Pax": 30,
+          "AWT": 20,
+          "APT": 30,
           "AWT_IDs": {},
           "APT_IDs": {}
         },
@@ -3230,9 +3230,9 @@
           "APT_IDs": {}
         },
         "3": {
-          "Pax": 0,
-          "AWT": 0,
-          "APT": 0,
+          "Pax": 30,
+          "AWT": 30,
+          "APT": 20,
           "AWT_IDs": {},
           "APT_IDs": {}
         },
@@ -3272,9 +3272,9 @@
           "APT_IDs": {}
         },
         "9": {
-          "Pax": 0,
-          "AWT": 0,
-          "APT": 0,
+          "Pax": 10,
+          "AWT": 20,
+          "APT": 30,
           "AWT_IDs": {},
           "APT_IDs": {}
         },
@@ -3369,9 +3369,9 @@
           "APT_IDs": {}
         },
         "20": {
-          "Pax": 0,
-          "AWT": 0,
-          "APT": 0,
+          "Pax": 20,
+          "AWT": 20,
+          "APT": 20,
           "AWT_IDs": {},
           "APT_IDs": {}
         },
@@ -3421,9 +3421,9 @@
       "active": true,
       "Heatmap": {
         "0": {
-          "Pax": 0,
-          "AWT": 0,
-          "APT": 0,
+          "Pax": 20,
+          "AWT": 20,
+          "APT": 20,
           "AWT_IDs": {},
           "APT_IDs": {}
         },
@@ -3435,9 +3435,9 @@
           "APT_IDs": {}
         },
         "2": {
-          "Pax": 0,
-          "AWT": 0,
-          "APT": 0,
+          "Pax": 30,
+          "AWT": 30,
+          "APT": 30,
           "AWT_IDs": {},
           "APT_IDs": {}
         },
@@ -3563,9 +3563,9 @@
           "APT_IDs": {}
         },
         "15": {
-          "Pax": 0,
-          "AWT": 0,
-          "APT": 0,
+          "Pax": 50,
+          "AWT": 430,
+          "APT": 30,
           "AWT_IDs": {},
           "APT_IDs": {}
         },
@@ -3598,9 +3598,9 @@
           "APT_IDs": {}
         },
         "20": {
-          "Pax": 0,
-          "AWT": 0,
-          "APT": 0,
+          "Pax": 30,
+          "AWT": 30,
+          "APT": 30,
           "AWT_IDs": {},
           "APT_IDs": {}
         },
@@ -3650,9 +3650,9 @@
       "active": true,
       "Heatmap": {
         "0": {
-          "Pax": 0,
-          "AWT": 0,
-          "APT": 0,
+          "Pax": 30,
+          "AWT": 30,
+          "APT": 30,
           "AWT_IDs": {},
           "APT_IDs": {}
         },
@@ -3664,9 +3664,9 @@
           "APT_IDs": {}
         },
         "2": {
-          "Pax": 0,
-          "AWT": 0,
-          "APT": 0,
+          "Pax": 30,
+          "AWT": 30,
+          "APT": 30,
           "AWT_IDs": {},
           "APT_IDs": {}
         },
@@ -3727,9 +3727,9 @@
           "APT_IDs": {}
         },
         "11": {
-          "Pax": 0,
-          "AWT": 0,
-          "APT": 0,
+          "Pax": 30,
+          "AWT": 30,
+          "APT": 30,
           "AWT_IDs": {},
           "APT_IDs": {}
         },
