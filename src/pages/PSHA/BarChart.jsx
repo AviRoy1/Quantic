@@ -51,13 +51,13 @@ const BarChart = ({ index, dummyData }) => {
   useEffect(() => {
     const updateChartData = () => {
       const selectedData =
-        index === "D1Q1"
-          ? dummyData.PSHA.D1Q1
-          : index === "D1Q2"
-          ? dummyData.PSHA.D1Q2
-          : index === "D2Q1"
-          ? dummyData.PSHA.D2Q1
-          : dummyData.PSHA.D2Q2;
+        index === "LPSHA1"
+          ? dummyData.PSHA.LPSHA1
+          : index === "LPSHA2"
+          ? dummyData.PSHA.LPSHA2
+          : index === "RPSHA"
+          ? dummyData.PSHA.RPSHA
+          : null;
       const seriesData = [
         selectedData["<5mins"],
         selectedData["<10mins"],

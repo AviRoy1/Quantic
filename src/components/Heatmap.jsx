@@ -7,26 +7,72 @@ import AccessibilityIcon from "@mui/icons-material/Accessibility";
 
 const HeatmapComponent = ({ jsonData }) => {
   const d1GateStatus =
-    jsonData["Entrance"]["D1Q1"]["Total_awt"] +
-    jsonData["Entrance"]["D1Q2"]["Total_awt"];
+    jsonData?.Entrance?.D1Q1 === null || jsonData?.Entrance?.D1Q1 === undefined
+      ? 0
+      : jsonData["Entrance"]["D1Q1"]["Total_awt"] +
+        jsonData["Entrance"]["D1Q2"]["Total_awt"];
   const d2GateStatus =
-    jsonData["Entrance"]["D2Q1"]["Total_awt"] +
-    jsonData["Entrance"]["D2Q2"]["Total_awt"];
-  const d1q1 = jsonData["Entrance"]["D1Q1"].manned;
-  const d1q2 = jsonData["Entrance"]["D1Q2"].manned;
-  const d2q1 = jsonData["Entrance"]["D2Q1"].manned;
-  const d2q2 = jsonData["Entrance"]["D2Q2"].manned;
+    jsonData?.Entrance?.D2Q1 === null || jsonData?.Entrance?.D2Q1 === undefined
+      ? 0
+      : jsonData["Entrance"]["D2Q1"]["Total_awt"] +
+        jsonData["Entrance"]["D2Q2"]["Total_awt"];
+  const d1q1 =
+    jsonData?.Entrance?.D1Q1 === null || jsonData?.Entrance?.D1Q1 === undefined
+      ? false
+      : jsonData["Entrance"]["D1Q1"].manned;
+  const d1q2 =
+    jsonData?.Entrance?.D1Q2 === null || jsonData?.Entrance?.D1Q2 === undefined
+      ? false
+      : jsonData["Entrance"]["D1Q2"].manned;
+  const d2q1 =
+    jsonData?.Entrance?.D2Q1 === null || jsonData?.Entrance?.D2Q1 === undefined
+      ? false
+      : jsonData["Entrance"]["D2Q1"].manned;
+  const d2q2 =
+    jsonData?.Entrance?.D2Q2 === null || jsonData?.Entrance?.D2Q2 === undefined
+      ? false
+      : jsonData["Entrance"]["D2Q2"].manned;
+  const d3q1 =
+    jsonData?.Entrance?.D3Q1 === null || jsonData?.Entrance?.D3Q1 === undefined
+      ? false
+      : jsonData["Entrance"]["D3Q1"].manned;
+  const d3q2 =
+    jsonData?.Entrance?.D3Q2 === null || jsonData?.Entrance?.D3Q2 === undefined
+      ? false
+      : jsonData["Entrance"]["D3Q2"].manned;
   useEffect(() => {
     const d1GateStatus =
-      jsonData["Entrance"]["D1Q1"]["Total_awt"] +
-      jsonData["Entrance"]["D1Q2"]["Total_awt"];
+      jsonData?.Entrance?.D1Q1 === null ||
+      jsonData?.Entrance?.D1Q1 === undefined
+        ? 0
+        : jsonData["Entrance"]["D1Q1"]["Total_awt"] +
+          jsonData["Entrance"]["D1Q2"]["Total_awt"];
     const d2GateStatus =
-      jsonData["Entrance"]["D2Q1"]["Total_awt"] +
-      jsonData["Entrance"]["D2Q2"]["Total_awt"];
-    const d1q1 = jsonData["Entrance"]["D1Q1"].manned;
-    const d1q2 = jsonData["Entrance"]["D1Q2"].manned;
-    const d2q1 = jsonData["Entrance"]["D2Q1"].manned;
-    const d2q2 = jsonData["Entrance"]["D2Q2"].manned;
+      jsonData?.Entrance?.D2Q1 === null ||
+      jsonData?.Entrance?.D2Q1 === undefined
+        ? 0
+        : jsonData["Entrance"]["D2Q1"]["Total_awt"] +
+          jsonData["Entrance"]["D2Q2"]["Total_awt"];
+    const d1q1 =
+      jsonData?.Entrance?.D1Q1 === null ||
+      jsonData?.Entrance?.D1Q1 === undefined
+        ? false
+        : jsonData["Entrance"]["D1Q1"].manned;
+    const d1q2 =
+      jsonData?.Entrance?.D1Q2 === null ||
+      jsonData?.Entrance?.D1Q2 === undefined
+        ? false
+        : jsonData["Entrance"]["D1Q2"].manned;
+    const d2q1 =
+      jsonData?.Entrance?.D2Q1 === null ||
+      jsonData?.Entrance?.D2Q1 === undefined
+        ? false
+        : jsonData["Entrance"]["D2Q1"].manned;
+    const d2q2 =
+      jsonData?.Entrance?.D2Q2 === null ||
+      jsonData?.Entrance?.D2Q2 === undefined
+        ? false
+        : jsonData["Entrance"]["D2Q2"].manned;
   }, [jsonData]);
 
   const currentHour = new Date().getHours();
@@ -82,6 +128,30 @@ const HeatmapComponent = ({ jsonData }) => {
         />
       ),
     },
+    {
+      label: "D3Q1",
+      icon: (
+        <AccessibilityIcon
+          style={{
+            height: "21px",
+            width: "50px",
+            color: d2q2 === true ? "green" : "red",
+          }}
+        />
+      ),
+    },
+    {
+      label: "D3Q2",
+      icon: (
+        <AccessibilityIcon
+          style={{
+            height: "21px",
+            width: "50px",
+            color: d2q2 === true ? "green" : "red",
+          }}
+        />
+      ),
+    },
   ];
 
   for (let i = currentHour; i >= currentHour - 23; i--) {
@@ -90,7 +160,11 @@ const HeatmapComponent = ({ jsonData }) => {
 
     const xData = xLabels.map((xLabel) => {
       const yIndex = (24 + i - currentHour + 23) % 24;
-
+      let cd = xLabel.label;
+      // if (
+      //   jsonData?.Entrance?.cd !== null &&
+      //   jsonData?.Entrance?.cd !== undefined
+      // )
       return jsonData["Entrance"][xLabel.label]["Heatmap"][hour.toString()][
         "Pax"
       ];

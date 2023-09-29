@@ -8,109 +8,169 @@ import totalpax from "../Icons/TOTAL TAX--01.svg";
 const LineChartComp = ({ index, dummyData }) => {
   let arr = [];
   let arr2 = [];
-
+  console.log(index);
   const [prv, setPrv] = useState(
     index === "D1Q1"
-      ? dummyData.Entrance.D1Q1.pax_prev
+      ? dummyData.Entrance?.D1Q1?.pax_prev
       : index === "D1Q2"
-      ? dummyData.Entrance.D1Q2.pax_prev
+      ? dummyData.Entrance?.D1Q2?.pax_prev
       : index === "D2Q2"
-      ? dummyData.Entrance.D2Q1.pax_prev
-      : dummyData.Entrance.D2Q2.pax_prev
+      ? dummyData.Entrance?.D2Q1?.pax_prev
+      : index === "D2Q2"
+      ? dummyData.Entrance?.D2Q2?.pax_prev
+      : index === "D3Q1"
+      ? dummyData.Entrance?.D3Q1?.pax_prev
+      : dummyData.Entrance?.D3Q2?.pax_prev
   );
   const [maxpax, setMaxpax] = useState(
     index === "D1Q1"
-      ? dummyData.Entrance.D1Q1.Total_pax
+      ? dummyData.Entrance?.D1Q1?.Total_pax
       : index === "D1Q2"
-      ? dummyData.Entrance.D1Q2.Total_pax
+      ? dummyData.Entrance?.D1Q2?.Total_pax
       : index === "D2Q2"
-      ? dummyData.Entrance.D2Q1.Total_pax
-      : dummyData.Entrance.D2Q2.Total_pax
+      ? dummyData.Entrance?.D2Q1?.Total_pax
+      : index === "D2Q2"
+      ? dummyData.Entrance?.D2Q2?.Total_pax
+      : index === "D3Q1"
+      ? dummyData.Entrance?.D3Q1?.Total_pax
+      : dummyData.Entrance?.D3Q2?.Total_pax
   );
   const [curAWT, setcurAWT] = useState(
     index === "D1Q1"
-      ? dummyData.Entrance.D1Q1.Total_awt
+      ? dummyData.Entrance?.D1Q1?.Total_awt
       : index === "D1Q2"
-      ? dummyData.Entrance.D1Q2.Total_awt
+      ? dummyData.Entrance?.D1Q2?.Total_awt
       : index === "D2Q2"
-      ? dummyData.Entrance.D2Q1.Total_awt
-      : dummyData.Entrance.D2Q2.Total_awt
+      ? dummyData.Entrance?.D2Q1?.Total_awt
+      : index === "D2Q2"
+      ? dummyData.Entrance?.D2Q2?.Total_awt
+      : index === "D3Q1"
+      ? dummyData.Entrance?.D3Q1?.Total_awt
+      : dummyData.Entrance?.D3Q2?.Total_awt
   );
   const [prvAWT, setprvAWT] = useState(
     index === "D1Q1"
-      ? dummyData.Entrance.D1Q1.awt_prev
+      ? dummyData.Entrance?.D1Q1?.awt_prev
       : index === "D1Q2"
-      ? dummyData.Entrance.D1Q2.awt_prev
+      ? dummyData.Entrance?.D1Q2?.awt_prev
       : index === "D2Q2"
-      ? dummyData.Entrance.D2Q1.awt_prev
-      : dummyData.Entrance.D2Q2.awt_prev
+      ? dummyData.Entrance?.D2Q1?.awt_prev
+      : index === "D2Q2"
+      ? dummyData.Entrance?.D2Q2?.awt_prev
+      : index === "D3Q1"
+      ? dummyData.Entrance?.D3Q1?.awt_prev
+      : dummyData.Entrance?.D3Q2?.awt_prev
   );
 
   useEffect(() => {
     setPrv(
       index === "D1Q1"
-        ? dummyData.Entrance.D1Q1.pax_prev
+        ? dummyData.Entrance?.D1Q1?.pax_prev
         : index === "D1Q2"
-        ? dummyData.Entrance.D1Q2.pax_prev
+        ? dummyData.Entrance?.D1Q2?.pax_prev
         : index === "D2Q2"
-        ? dummyData.Entrance.D2Q1.pax_prev
-        : dummyData.Entrance.D2Q2.pax_prev
+        ? dummyData.Entrance?.D2Q1?.pax_prev
+        : index === "D2Q2"
+        ? dummyData.Entrance?.D2Q2?.pax_prev
+        : index === "D3Q1"
+        ? dummyData.Entrance?.D3Q1?.pax_prev
+        : dummyData.Entrance?.D3Q2?.pax_prev
     );
     setMaxpax(
       index === "D1Q1"
-        ? dummyData.Entrance.D1Q1.Total_pax
+        ? dummyData.Entrance?.D1Q1?.Total_pax
         : index === "D1Q2"
-        ? dummyData.Entrance.D1Q2.Total_pax
+        ? dummyData.Entrance?.D1Q2?.Total_pax
         : index === "D2Q2"
-        ? dummyData.Entrance.D2Q1.Total_pax
-        : dummyData.Entrance.D2Q2.Total_pax
+        ? dummyData.Entrance?.D2Q1?.Total_pax
+        : index === "D2Q2"
+        ? dummyData.Entrance?.D2Q2?.Total_pax
+        : index === "D3Q1"
+        ? dummyData.Entrance?.D3Q1?.Total_pax
+        : dummyData.Entrance?.D3Q2?.Total_pax
     );
     setcurAWT(
       index === "D1Q1"
-        ? dummyData.Entrance.D1Q1.Total_awt
+        ? dummyData.Entrance?.D1Q1?.Total_awt
         : index === "D1Q2"
-        ? dummyData.Entrance.D1Q2.Total_awt
+        ? dummyData.Entrance?.D1Q2?.Total_awt
         : index === "D2Q2"
-        ? dummyData.Entrance.D2Q1.Total_awt
-        : dummyData.Entrance.D2Q2.Total_awt
+        ? dummyData.Entrance?.D2Q1?.Total_awt
+        : index === "D2Q2"
+        ? dummyData.Entrance?.D2Q2?.Total_awt
+        : index === "D3Q1"
+        ? dummyData.Entrance?.D3Q1?.Total_awt
+        : dummyData.Entrance?.D3Q2?.Total_awt
     );
     setprvAWT(
       index === "D1Q1"
-        ? dummyData.Entrance.D1Q1.awt_prev
+        ? dummyData.Entrance?.D1Q1?.awt_prev
         : index === "D1Q2"
-        ? dummyData.Entrance.D1Q2.awt_prev
+        ? dummyData.Entrance?.D1Q2?.awt_prev
         : index === "D2Q2"
-        ? dummyData.Entrance.D2Q1.awt_prev
-        : dummyData.Entrance.D2Q2.awt_prev
+        ? dummyData.Entrance?.D2Q1?.awt_prev
+        : index === "D2Q2"
+        ? dummyData.Entrance?.D2Q2?.awt_prev
+        : index === "D3Q1"
+        ? dummyData.Entrance?.D3Q1?.awt_prev
+        : dummyData.Entrance?.D3Q2?.awt_prev
     );
   });
   let maxX = 0;
   let data;
   if (index === "D1Q1")
-    data = Object.values(dummyData.Entrance.D1Q1.Heatmap).map((item, index) => {
-      arr.push(item.Pax);
-      maxX = Math.max(item.Pax, maxX);
-      arr2.push(index + "-" + (index + 1));
-    });
-  else if (index === "D1Q2")
-    data = Object.values(dummyData.Entrance.D1Q2.Heatmap).map((item, index) => {
-      arr.push(item.Pax);
-      maxX = Math.max(item.Pax, maxX);
-      arr2.push(index + "-" + (index + 1));
-    });
-  else if (index === "D2Q1")
-    data = Object.values(dummyData.Entrance.D2Q1.Heatmap).map((item, index) => {
-      arr.push(item.Pax);
-      maxX = Math.max(item.Pax, maxX);
-      arr2.push(index + "-" + (index + 1));
-    });
-  else {
-    data = Object.values(dummyData.Entrance.D2Q2.Heatmap).map((item, index) => {
-      arr.push(item.Pax);
-      maxX = Math.max(item.Pax, maxX);
-      arr2.push(index + "-" + (index + 1));
-    });
-  }
+    if (
+      dummyData?.Entrance?.D1Q1 !== null &&
+      dummyData?.Entrance?.D1Q1 !== undefined
+    ) {
+      data = Object.values(dummyData.Entrance?.D1Q1.Heatmap).map(
+        (item, index) => {
+          arr.push(item.Pax);
+          maxX = Math.max(item.Pax, maxX);
+          arr2.push(index + "-" + (index + 1));
+        }
+      );
+    } else if (index === "D1Q2")
+      data = Object.values(dummyData.Entrance?.D1Q2.Heatmap).map(
+        (item, index) => {
+          arr.push(item.Pax);
+          maxX = Math.max(item.Pax, maxX);
+          arr2.push(index + "-" + (index + 1));
+        }
+      );
+    else if (index === "D2Q1")
+      data = Object.values(dummyData.Entrance.D2Q1.Heatmap).map(
+        (item, index) => {
+          arr.push(item.Pax);
+          maxX = Math.max(item.Pax, maxX);
+          arr2.push(index + "-" + (index + 1));
+        }
+      );
+    else if (index === "D2Q2") {
+      data = Object.values(dummyData.Entrance.D2Q2.Heatmap).map(
+        (item, index) => {
+          arr.push(item.Pax);
+          maxX = Math.max(item.Pax, maxX);
+          arr2.push(index + "-" + (index + 1));
+        }
+      );
+    } else if (index === "D3Q1") {
+      data = Object.values(dummyData.Entrance.D2Q2.Heatmap).map(
+        (item, index) => {
+          arr.push(item.Pax);
+          maxX = Math.max(item.Pax, maxX);
+          arr2.push(index + "-" + (index + 1));
+        }
+      );
+    } else if (index === "D3Q2") {
+      data = Object.values(dummyData.Entrance.D2Q2.Heatmap).map(
+        (item, index) => {
+          arr.push(item.Pax);
+          maxX = Math.max(item.Pax, maxX);
+          arr2.push(index + "-" + (index + 1));
+        }
+      );
+    }
   arr.pop();
   arr2.pop();
   const maxPeakIndex = arr.indexOf(Math.max(...arr));

@@ -11,108 +11,108 @@ const LineChartComp = ({ index, dummyData }) => {
   let arr2 = [];
 
   const [prv, setPrv] = useState(
-    index === "D1Q1"
-      ? dummyData.PSHA.D1Q1.pax_prev
-      : index === "D1Q2"
-      ? dummyData.PSHA.D1Q2.pax_prev
-      : index === "D2Q2"
-      ? dummyData.PSHA.D2Q1.pax_prev
-      : dummyData.PSHA.D2Q2.pax_prev
+    index === "LPSHA1"
+      ? dummyData.PSHA.LPSHA1.pax_prev
+      : index === "LPSHA2"
+      ? dummyData.PSHA.LPSHA2.pax_prev
+      : index === "RPSHA"
+      ? dummyData.PSHA.RPSHA.pax_prev
+      : null
   );
   const [maxpax, setMaxpax] = useState(
-    index === "D1Q1"
-      ? dummyData.PSHA.D1Q1.Total_pax
-      : index === "D1Q2"
-      ? dummyData.PSHA.D1Q2.Total_pax
-      : index === "D2Q2"
-      ? dummyData.PSHA.D2Q1.Total_pax
-      : dummyData.PSHA.D2Q2.Total_pax
+    index === "LPSHA1"
+      ? dummyData.PSHA.LPSHA1.Total_pax
+      : index === "LPSHA2"
+      ? dummyData.PSHA.LPSHA2.Total_pax
+      : index === "RPSHA"
+      ? dummyData.PSHA.RPSHA.Total_pax
+      : null
   );
   const [curAWT, setcurAWT] = useState(
-    index === "D1Q1"
-      ? dummyData.PSHA.D1Q1.Total_awt
-      : index === "D1Q2"
-      ? dummyData.PSHA.D1Q2.Total_awt
-      : index === "D2Q2"
-      ? dummyData.PSHA.D2Q1.Total_awt
-      : dummyData.PSHA.D2Q2.Total_awt
+    index === "LPSHA1"
+      ? dummyData.PSHA.LPSHA1.Total_awt
+      : index === "LPSHA2"
+      ? dummyData.PSHA.LPSHA2.Total_awt
+      : index === "RPSHA"
+      ? dummyData.PSHA.RPSHA.Total_awt
+      : null
   );
   const [prvAWT, setprvAWT] = useState(
-    index === "D1Q1"
-      ? dummyData.PSHA.D1Q1.awt_prev
-      : index === "D1Q2"
-      ? dummyData.PSHA.D1Q2.awt_prev
-      : index === "D2Q2"
-      ? dummyData.PSHA.D2Q1.awt_prev
-      : dummyData.PSHA.D2Q2.awt_prev
+    index === "LPSHA1"
+      ? dummyData.PSHA.LPSHA1.awt_prev
+      : index === "LPSHA2"
+      ? dummyData.PSHA.LPSHA2.awt_prev
+      : index === "RPSHA"
+      ? dummyData.PSHA.RPSHA.awt_prev
+      : null
   );
 
   useEffect(() => {
     setPrv(
-      index === "D1Q1"
-        ? dummyData.PSHA.D1Q1.pax_prev
-        : index === "D1Q2"
-        ? dummyData.PSHA.D1Q2.pax_prev
-        : index === "D2Q2"
-        ? dummyData.PSHA.D2Q1.pax_prev
-        : dummyData.PSHA.D2Q2.pax_prev
+      index === "LPSHA1"
+        ? dummyData.PSHA.LPSHA1.pax_prev
+        : index === "LPSHA2"
+        ? dummyData.PSHA.LPSHA2.pax_prev
+        : index === "RPSHA"
+        ? dummyData.PSHA.RPSHA.pax_prev
+        : null
     );
     setMaxpax(
-      index === "D1Q1"
-        ? dummyData.PSHA.D1Q1.Total_pax
-        : index === "D1Q2"
-        ? dummyData.PSHA.D1Q2.Total_pax
-        : index === "D2Q2"
-        ? dummyData.PSHA.D2Q1.Total_pax
-        : dummyData.PSHA.D2Q2.Total_pax
+      index === "LPSHA1"
+        ? dummyData.PSHA.LPSHA1.Total_pax
+        : index === "LPSHA2"
+        ? dummyData.PSHA.LPSHA2.Total_pax
+        : index === "RPSHA"
+        ? dummyData.PSHA.RPSHA.Total_pax
+        : null
     );
     setcurAWT(
-      index === "D1Q1"
-        ? dummyData.PSHA.D1Q1.Total_awt
-        : index === "D1Q2"
-        ? dummyData.PSHA.D1Q2.Total_awt
-        : index === "D2Q2"
-        ? dummyData.PSHA.D2Q1.Total_awt
-        : dummyData.PSHA.D2Q2.Total_awt
+      index === "LPSHA1"
+        ? dummyData.PSHA.LPSHA1.Total_awt
+        : index === "LPSHA2"
+        ? dummyData.PSHA.LPSHA2.Total_awt
+        : index === "RPSHA"
+        ? dummyData.PSHA.RPSHA.Total_awt
+        : null
     );
     setprvAWT(
-      index === "D1Q1"
-        ? dummyData.PSHA.D1Q1.awt_prev
-        : index === "D12"
-        ? dummyData.PSHA.D1Q2.awt_prev
-        : index === "D2Q2"
-        ? dummyData.PSHA.D2Q1.awt_prev
-        : dummyData.PSHA.D2Q2.awt_prev
+      index === "LPSHA1"
+        ? dummyData.PSHA.LPSHA1.awt_prev
+        : index === "LPSHA2"
+        ? dummyData.PSHA.LPSHA2.awt_prev
+        : index === "RPSHA"
+        ? dummyData.PSHA.RPSHA.awt_prev
+        : null
     );
   });
 
   let maxX = 0;
   let data;
-  if (index === "D1Q1")
-    data = Object.values(dummyData.PSHA.D1Q1.Heatmap).map((item, index) => {
+  if (index === "LPSHA1")
+    data = Object.values(dummyData.PSHA.LPSHA1.Heatmap).map((item, index) => {
       arr.push(item.Pax);
       maxX = Math.max(item.Pax, maxX);
       arr2.push(index + "-" + (index + 1));
     });
-  else if (index === "D1Q2")
-    data = Object.values(dummyData.PSHA.D1Q2.Heatmap).map((item, index) => {
+  else if (index === "LPSHA2")
+    data = Object.values(dummyData.PSHA.LPSHA2.Heatmap).map((item, index) => {
       arr.push(item.Pax);
       maxX = Math.max(item.Pax, maxX);
       arr2.push(index + "-" + (index + 1));
     });
-  else if (index === "D2Q1")
-    data = Object.values(dummyData.PSHA.D2Q1.Heatmap).map((item, index) => {
+  else if (index === "RPSHA")
+    data = Object.values(dummyData.PSHA.RPSHA.Heatmap).map((item, index) => {
       arr.push(item.Pax);
       maxX = Math.max(item.Pax, maxX);
       arr2.push(index + "-" + (index + 1));
     });
-  else {
-    data = Object.values(dummyData.PSHA.D2Q2.Heatmap).map((item, index) => {
-      arr.push(item.Pax);
-      maxX = Math.max(item.Pax, maxX);
-      arr2.push(index + "-" + (index + 1));
-    });
-  }
+  // else {
+  //   data = Object.values(dummyData.PSHA.D2Q2.Heatmap).map((item, index) => {
+  //     arr.push(item.Pax);
+  //     maxX = Math.max(item.Pax, maxX);
+  //     arr2.push(index + "-" + (index + 1));
+  //   });
+  // }
   arr.pop();
   arr2.pop();
   const maxPeakIndex = arr.indexOf(Math.max(...arr));

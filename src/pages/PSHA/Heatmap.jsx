@@ -6,16 +6,16 @@ import person from "../../Icons/person-svgrepo-com.svg";
 import profileCicle from "../../Icons/profile-circle-svgrepo-com (2).svg";
 import AccessibilityIcon from "@mui/icons-material/Accessibility";
 
-const HeatmapComponent = ({jsonData}) => {
+const HeatmapComponent = ({ jsonData }) => {
   // const xLabels = ["D1Q1", "D1Q2", "D2Q1", "D2Q2"];
-  const d1q1 = jsonData["PSHA"]["D1Q1"].manned;
-  const d1q2 = jsonData["PSHA"]["D1Q2"].manned;
-  const d2q1 = jsonData["PSHA"]["D2Q1"].manned;
-  const d2q2 = jsonData["PSHA"]["D2Q2"].manned;
+  const d1q1 = jsonData["PSHA"]["LPSHA1"].manned;
+  const d1q2 = jsonData["PSHA"]["LPSHA2"].manned;
+  const d2q1 = jsonData["PSHA"]["RPSHA"].manned;
+  // const d2q2 = jsonData["PSHA"]["D2Q2"].manned;
 
   const xLabels = [
     {
-      label: "D1Q1",
+      label: "LPSHA1",
       icon: (
         <AccessibilityIcon
           style={{
@@ -27,7 +27,7 @@ const HeatmapComponent = ({jsonData}) => {
       ),
     },
     {
-      label: "D1Q2",
+      label: "LPSHA2",
       icon: (
         <AccessibilityIcon
           style={{
@@ -39,7 +39,7 @@ const HeatmapComponent = ({jsonData}) => {
       ),
     },
     {
-      label: "D2Q1",
+      label: "RPSHA",
       icon: (
         <AccessibilityIcon
           style={{
@@ -50,18 +50,18 @@ const HeatmapComponent = ({jsonData}) => {
         />
       ),
     },
-    {
-      label: "D2Q2",
-      icon: (
-        <AccessibilityIcon
-          style={{
-            height: "21px",
-            width: "40px",
-            color: d2q2 === true ? "green" : "red",
-          }}
-        />
-      ),
-    },
+    // {
+    //   label: "D2Q2",
+    //   icon: (
+    //     <AccessibilityIcon
+    //       style={{
+    //         height: "21px",
+    //         width: "40px",
+    //         color: d2q2 === true ? "green" : "red",
+    //       }}
+    //     />
+    //   ),
+    // },
   ];
 
   // const yLabels = [
@@ -220,10 +220,9 @@ const HeatmapComponent = ({jsonData}) => {
                   marginLeft:
                     xLabel.label === "D1Q1"
                       ? "-4px"
-                      : xLabel.label === "D2Q2" ||
-                        xLabel.label === "D2Q1" ||
-                        xLabel.label === "D1Q2"
-                      ? "73px"
+                      : xLabel.label === "LPSHA1" || xLabel.label === "LPSHA2"
+                      ? // xLabel.label === "RPSHA"
+                        "73px"
                       : 0,
                 }}
               >

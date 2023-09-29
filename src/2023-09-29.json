@@ -1,0 +1,4531 @@
+{
+  "SHA": {
+    "F1": {
+      "active": true,
+      "Heatmap": {
+        "0": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "1": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "2": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "3": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "4": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "5": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "6": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "7": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "8": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "9": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "10": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "11": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "12": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "13": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "14": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "15": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "16": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "17": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "18": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "19": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "20": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "21": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "22": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "23": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "24": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        }
+      }
+    },
+    "F2": {
+      "active": true,
+      "Heatmap": {
+        "0": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "1": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "2": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "3": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "4": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "5": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "6": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "7": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "8": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "9": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "10": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "11": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "12": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "13": {
+          "Pax": 1,
+          "AWT": 0,
+          "APT": 16,
+          "AWT_IDs": {},
+          "APT_IDs": {
+            "5": 16
+          }
+        },
+        "14": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "15": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "16": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "17": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "18": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "19": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "20": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "21": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "22": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "23": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "24": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        }
+      }
+    },
+    "F3": {
+      "active": false,
+      "Heatmap": {
+        "0": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "1": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "2": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "3": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "4": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "5": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "6": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "7": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "8": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "9": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "10": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "11": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "12": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "13": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "14": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "15": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "16": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "17": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "18": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "19": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "20": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "21": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "22": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "23": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "24": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        }
+      }
+    },
+    "F4": {
+      "active": false,
+      "Heatmap": {
+        "0": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "1": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "2": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "3": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "4": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "5": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "6": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "7": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "8": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "9": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "10": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "11": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "12": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "13": {
+          "Pax": 1,
+          "AWT": 0,
+          "APT": 1,
+          "AWT_IDs": {},
+          "APT_IDs": {
+            "44": 1
+          }
+        },
+        "14": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "15": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "16": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "17": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "18": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "19": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "20": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "21": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "22": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "23": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "24": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        }
+      }
+    },
+    "F5": {
+      "active": false,
+      "Heatmap": {
+        "0": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "1": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "2": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "3": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "4": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "5": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "6": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "7": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "8": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "9": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "10": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "11": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "12": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "13": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "14": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "15": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "16": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "17": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "18": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "19": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "20": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "21": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "22": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "23": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "24": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        }
+      }
+    },
+    "F6": {
+      "active": true,
+      "Heatmap": {
+        "0": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "1": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "2": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "3": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "4": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "5": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "6": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "7": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "8": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "9": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "10": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "11": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "12": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "13": {
+          "Pax": 10,
+          "AWT": 0,
+          "APT": 17,
+          "AWT_IDs": {},
+          "APT_IDs": {
+            "8": 27,
+            "24": 21,
+            "32": 17,
+            "9": 2,
+            "1": 15,
+            "31": 16,
+            "6": 23,
+            "23": 17,
+            "29": 15,
+            "43": 19
+          }
+        },
+        "14": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "15": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "16": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "17": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "18": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "19": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "20": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "21": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "22": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "23": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "24": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        }
+      }
+    },
+    "F7": {
+      "active": true,
+      "Heatmap": {
+        "0": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "1": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "2": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "3": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "4": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "5": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "6": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "7": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "8": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "9": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "10": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "11": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "12": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "13": {
+          "Pax": 7,
+          "AWT": 0,
+          "APT": 11,
+          "AWT_IDs": {},
+          "APT_IDs": {
+            "18": 2,
+            "25": 15,
+            "15": 8,
+            "19": 12,
+            "25": 2,
+            "2": 31
+          }
+        },
+        "14": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "15": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "16": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "17": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "18": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "19": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "20": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "21": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "22": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "23": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "24": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        }
+      }
+    },
+    "F8": {
+      "active": false,
+      "Heatmap": {
+        "0": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "1": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "2": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "3": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "4": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "5": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "6": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "7": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "8": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "9": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "10": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "11": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "12": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "13": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "14": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "15": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "16": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "17": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "18": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "19": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "20": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "21": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "22": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "23": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "24": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        }
+      }
+    },
+    "F9": {
+      "active": true,
+      "Heatmap": {
+        "0": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "1": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "2": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "3": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "4": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "5": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "6": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "7": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "8": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "9": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "10": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "11": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "12": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "13": {
+          "Pax": 4,
+          "AWT": 0,
+          "APT": 24,
+          "AWT_IDs": {},
+          "APT_IDs": {
+            "18": 14,
+            "1": 32,
+            "6": 18,
+            "18": 33
+          }
+        },
+        "14": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "15": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "16": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "17": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "18": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "19": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "20": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "21": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "22": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "23": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "24": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        }
+      }
+    },
+    "F10": {
+      "active": true,
+      "Heatmap": {
+        "0": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "1": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "2": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "3": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "4": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "5": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "6": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "7": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "8": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "9": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "10": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "11": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "12": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "13": {
+          "Pax": 2,
+          "AWT": 0,
+          "APT": 33,
+          "AWT_IDs": {},
+          "APT_IDs": {
+            "26": 40,
+            "20": 27
+          }
+        },
+        "14": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "15": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "16": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "17": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "18": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "19": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "20": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "21": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "22": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "23": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "24": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        }
+      }
+    },
+    "F11": {
+      "active": false,
+      "Heatmap": {
+        "0": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "1": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "2": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "3": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "4": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "5": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "6": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "7": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "8": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "9": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "10": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "11": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "12": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "13": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "14": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "15": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "16": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "17": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "18": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "19": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "20": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "21": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "22": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "23": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "24": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        }
+      }
+    },
+    "F12": {
+      "active": true,
+      "Heatmap": {
+        "0": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "1": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "2": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "3": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "4": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "5": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "6": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "7": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "8": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "9": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "10": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "11": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "12": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "13": {
+          "Pax": 12,
+          "AWT": 0,
+          "APT": 22,
+          "AWT_IDs": {},
+          "APT_IDs": {
+            "2": 10,
+            "5": 30,
+            "11": 13,
+            "10": 41,
+            "16": 13,
+            "7": 20,
+            "22": 37,
+            "33": 35,
+            "43": 29,
+            "45": 6,
+            "51": 14,
+            "58": 16
+          }
+        },
+        "14": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "15": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "16": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "17": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "18": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "19": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "20": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "21": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "22": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "23": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "24": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        }
+      }
+    },
+    "F13": {
+      "active": false,
+      "Heatmap": {
+        "0": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "1": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "2": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "3": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "4": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "5": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "6": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "7": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "8": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "9": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "10": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "11": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "12": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "13": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "14": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "15": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "16": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "17": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "18": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "19": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "20": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "21": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "22": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "23": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "24": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        }
+      }
+    },
+    "F14": {
+      "active": false,
+      "Heatmap": {
+        "0": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "1": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "2": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "3": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "4": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "5": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "6": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "7": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "8": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "9": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "10": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "11": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "12": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "13": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "14": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "15": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "16": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "17": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "18": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "19": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "20": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "21": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "22": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "23": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "24": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        }
+      }
+    }
+  },
+  "Entrance": {
+    "D3Q1": {
+      "active": true,
+      "Heatmap": {
+        "0": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "1": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "2": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "3": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "4": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "5": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "6": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "7": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "8": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "9": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "10": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "11": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "12": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "13": {
+          "Pax": 11,
+          "AWT": 1.2,
+          "APT": 0.3,
+          "AWT_IDs": {
+            "10": 0,
+            "1": 0,
+            "13": 20,
+            "17": 50,
+            "3": 0,
+            "11": 2,
+            "5": 14,
+            "22": 17,
+            "26": 3,
+            "27": 5,
+            "54": 0,
+            "50": 8
+          },
+          "APT_IDs": {
+            "10": 24,
+            "13": 30,
+            "17": 2,
+            "11": 27,
+            "3": 13,
+            "2": 0,
+            "22": 3,
+            "5": 13,
+            "26": 1,
+            "27": 27
+          }
+        },
+        "14": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "15": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "16": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "17": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "18": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "19": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "20": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "21": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "22": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "23": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "24": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        }
+      },
+      "manned": true,
+      "Total_pax": 11,
+      "pax_prev": 0,
+      "pax_perc": 0,
+      "pax_sign": 0,
+      "Total_awt": 1.2,
+      "awt_prev": 0,
+      "awt_perc": 0,
+      "awt_sign": 0,
+      "<5mins": 39,
+      "<10mins": 0,
+      ">10mins": 0
+    },
+    "D3Q2": {
+      "active": true,
+      "Heatmap": {
+        "0": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "1": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "2": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "3": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "4": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "5": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "6": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "7": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "8": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "9": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "10": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "11": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "12": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "13": {
+          "Pax": 8,
+          "AWT": 0.4,
+          "APT": 0.1,
+          "AWT_IDs": {
+            "1": 0,
+            "31": 3,
+            "16": 4,
+            "22": 0,
+            "2": 0,
+            "17": 6,
+            "5": 0,
+            "33": 4,
+            "27": 0,
+            "36": 15
+          },
+          "APT_IDs": {
+            "31": 20,
+            "1": 4,
+            "22": 12,
+            "16": 0,
+            "17": 7,
+            "2": 18,
+            "33": 19,
+            "36": 18
+          }
+        },
+        "14": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "15": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "16": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "17": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "18": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "19": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "20": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "21": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "22": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "23": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "24": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        }
+      },
+      "manned": true,
+      "Total_pax": 8,
+      "pax_prev": 0,
+      "pax_perc": 0,
+      "pax_sign": 0,
+      "Total_awt": 0.4,
+      "awt_prev": 0,
+      "awt_perc": 0,
+      "awt_sign": 0,
+      "<5mins": 48,
+      "<10mins": 0,
+      ">10mins": 0
+    },
+    "D1Q1": {
+      "active": true,
+      "Heatmap": {
+        "0": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "1": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "2": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "3": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "4": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "5": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "6": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "7": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "8": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "9": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "10": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "11": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "12": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "13": {
+          "Pax": 8,
+          "AWT": 0.4,
+          "APT": 0.1,
+          "AWT_IDs": {
+            "1": 0,
+            "31": 3,
+            "16": 4,
+            "22": 0,
+            "2": 0,
+            "17": 6,
+            "5": 0,
+            "33": 4,
+            "27": 0,
+            "36": 15
+          },
+          "APT_IDs": {
+            "31": 20,
+            "1": 4,
+            "22": 12,
+            "16": 0,
+            "17": 7,
+            "2": 18,
+            "33": 19,
+            "36": 18
+          }
+        },
+        "14": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "15": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "16": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "17": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "18": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "19": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "20": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "21": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "22": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "23": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "24": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        }
+      },
+      "manned": true,
+      "Total_pax": 8,
+      "pax_prev": 0,
+      "pax_perc": 0,
+      "pax_sign": 0,
+      "Total_awt": 0.4,
+      "awt_prev": 0,
+      "awt_perc": 0,
+      "awt_sign": 0,
+      "<5mins": 48,
+      "<10mins": 0,
+      ">10mins": 0
+    },
+    "D1Q2": {
+      "active": true,
+      "Heatmap": {
+        "0": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "1": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "2": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "3": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "4": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "5": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "6": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "7": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "8": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "9": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "10": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "11": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "12": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "13": {
+          "Pax": 8,
+          "AWT": 0.4,
+          "APT": 0.1,
+          "AWT_IDs": {
+            "1": 0,
+            "31": 3,
+            "16": 4,
+            "22": 0,
+            "2": 0,
+            "17": 6,
+            "5": 0,
+            "33": 4,
+            "27": 0,
+            "36": 15
+          },
+          "APT_IDs": {
+            "31": 20,
+            "1": 4,
+            "22": 12,
+            "16": 0,
+            "17": 7,
+            "2": 18,
+            "33": 19,
+            "36": 18
+          }
+        },
+        "14": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "15": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "16": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "17": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "18": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "19": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "20": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "21": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "22": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "23": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "24": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        }
+      },
+      "manned": true,
+      "Total_pax": 8,
+      "pax_prev": 0,
+      "pax_perc": 0,
+      "pax_sign": 0,
+      "Total_awt": 0.4,
+      "awt_prev": 0,
+      "awt_perc": 0,
+      "awt_sign": 0,
+      "<5mins": 48,
+      "<10mins": 0,
+      ">10mins": 0
+    },
+    "D2Q1": {
+      "active": true,
+      "Heatmap": {
+        "0": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "1": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "2": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "3": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "4": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "5": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "6": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "7": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "8": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "9": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "10": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "11": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "12": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "13": {
+          "Pax": 24,
+          "AWT": 0.3,
+          "APT": 0.1,
+          "AWT_IDs": {
+            "2": 0,
+            "4": 13,
+            "9": 0,
+            "6": 51,
+            "3": 44,
+            "5": 0,
+            "1": 7,
+            "12": 0,
+            "22": 0,
+            "10": 67,
+            "28": 19
+          },
+          "APT_IDs": {
+            "8": {},
+            "9": 0,
+            "7": 8,
+            "5": {},
+            "2": 17,
+            "13": 0,
+            "17": 0,
+            "28": {},
+            "12": {},
+            "3": 0,
+            "27": 6,
+            "16": {},
+            "53": {},
+            "82": {},
+            "57": 0,
+            "5": 0,
+            "1": 25,
+            "39": 9,
+            "12": 11,
+            "8": 0,
+            "25": 0,
+            "24": 0,
+            "64": {},
+            "10": 2
+          }
+        },
+        "14": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "15": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "16": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "17": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "18": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "19": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "20": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "21": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "22": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "23": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "24": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        }
+      },
+      "manned": true,
+      "Total_pax": 24,
+      "pax_prev": 0,
+      "pax_perc": 0,
+      "pax_sign": 0,
+      "Total_awt": 0.3,
+      "awt_prev": 0,
+      "awt_perc": 0,
+      "awt_sign": 0,
+      "<5mins": 58,
+      "<10mins": 0,
+      ">10mins": 0
+    },
+    "D2Q2": {
+      "active": true,
+      "Heatmap": {
+        "0": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "1": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "2": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "3": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "4": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "5": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "6": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "7": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "8": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "9": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "10": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "11": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "12": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "13": {
+          "Pax": 8,
+          "AWT": 0.3,
+          "APT": 0.1,
+          "AWT_IDs": {
+            "7": {},
+            "13": 62,
+            "34": 0,
+            "1": 11,
+            "4": 18,
+            "3": 33,
+            "14": 19,
+            "22": 0,
+            "10": 10,
+            "28": 0
+          },
+          "APT_IDs": {
+            "3": {},
+            "7": 6,
+            "29": {},
+            "16": {},
+            "11": {},
+            "34": 4,
+            "79": 2,
+            "4": 15,
+            "3": 16,
+            "10": 2
+          }
+        },
+        "14": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "15": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "16": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "17": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "18": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "19": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "20": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "21": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "22": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "23": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "24": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        }
+      },
+      "manned": true,
+      "Total_pax": 8,
+      "pax_prev": 0,
+      "pax_perc": 0,
+      "pax_sign": 0,
+      "Total_awt": 0.3,
+      "awt_prev": 0,
+      "awt_perc": 0,
+      "awt_sign": 0,
+      "<5mins": 22,
+      "<10mins": 0,
+      ">10mins": 0
+    }
+  },
+  "PSHA": {
+    "LPSHA1": {
+      "active": true,
+      "Heatmap": {
+        "0": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "1": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "2": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "3": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "4": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "5": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "6": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "7": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "8": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "9": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "10": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "11": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "12": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "13": {
+          "Pax": 27,
+          "AWT": 0.0,
+          "APT": 0.0,
+          "AWT_IDs": {},
+          "APT_IDs": {
+            "90": {},
+            "111": 1,
+            "115": 3,
+            "153": 2,
+            "175": {},
+            "217": {},
+            "218": {},
+            "239": 11,
+            "257": {},
+            "271": {},
+            "287": 6,
+            "50": 1,
+            "51": 5,
+            "19": {},
+            "30": 4,
+            "2": 0,
+            "21": {},
+            "58": {},
+            "31": 2,
+            "64": {},
+            "61": 1,
+            "23": {},
+            "99": {},
+            "11": {},
+            "81": {},
+            "71": {},
+            "3": {},
+            "76": 4,
+            "93": 3,
+            "119": 2,
+            "69": {},
+            "43": {},
+            "19": {},
+            "21": 1,
+            "4": {},
+            "27": {},
+            "87": {},
+            "97": {},
+            "94": {}
+          }
+        },
+        "14": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "15": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "16": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "17": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "18": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "19": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "20": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "21": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "22": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "23": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "24": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        }
+      },
+      "manned": true,
+      "Total_pax": 27,
+      "pax_prev": 0,
+      "pax_perc": 0,
+      "pax_sign": 0,
+      "Total_awt": 0.0,
+      "awt_prev": 0,
+      "awt_perc": 0,
+      "awt_sign": 0,
+      "<5mins": 0,
+      "<10mins": 0,
+      ">10mins": 0
+    },
+    "LPSHA2": {
+      "active": true,
+      "Heatmap": {
+        "0": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "1": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "2": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "3": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "4": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "5": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "6": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "7": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "8": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "9": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "10": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "11": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "12": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "13": {
+          "Pax": 5,
+          "AWT": 0.0,
+          "APT": 0.0,
+          "AWT_IDs": {},
+          "APT_IDs": {
+            "56": 0,
+            "164": 5,
+            "225": 0,
+            "227": {},
+            "86": 0,
+            "9": {},
+            "69": 36,
+            "70": 3,
+            "71": 17,
+            "102": 18,
+            "3": {},
+            "17": 2,
+            "39": 2,
+            "9": 22,
+            "14": {},
+            "30": {},
+            "72": 3,
+            "92": 3,
+            "95": 5,
+            "112": 0,
+            "115": 1,
+            "126": 5,
+            "128": 3
+          }
+        },
+        "14": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "15": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "16": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "17": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "18": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "19": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "20": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "21": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "22": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "23": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "24": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        }
+      },
+      "manned": true,
+      "Total_pax": 5,
+      "pax_prev": 0,
+      "pax_perc": 0,
+      "pax_sign": 0,
+      "Total_awt": 0.0,
+      "awt_prev": 0,
+      "awt_perc": 0,
+      "awt_sign": 0,
+      "<5mins": 0,
+      "<10mins": 0,
+      ">10mins": 0
+    },
+    "RPSHA": {
+      "active": true,
+      "Heatmap": {
+        "0": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "1": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "2": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "3": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "4": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "5": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "6": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "7": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "8": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "9": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "10": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "11": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "12": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "13": {
+          "Pax": 18,
+          "AWT": 4.2,
+          "APT": 0.6,
+          "AWT_IDs": {},
+          "APT_IDs": {
+            "40": {},
+            "108": 38,
+            "23": {},
+            "282": {},
+            "200": {},
+            "345": {},
+            "368": {},
+            "401": {},
+            "466": {},
+            "510": {},
+            "542": 1,
+            "648": {},
+            "579": 4,
+            "24": {},
+            "30": {},
+            "48": {},
+            "67": {},
+            "96": {},
+            "188": 4,
+            "187": 2,
+            "250": {},
+            "323": {},
+            "17": 4,
+            "32": 2
+          }
+        },
+        "14": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "15": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "16": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "17": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "18": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "19": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "20": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "21": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "22": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "23": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        },
+        "24": {
+          "Pax": 0,
+          "AWT": 0,
+          "APT": 0,
+          "AWT_IDs": {},
+          "APT_IDs": {}
+        }
+      },
+      "manned": true,
+      "Total_pax": 18,
+      "pax_prev": 0,
+      "pax_perc": 0,
+      "pax_sign": 0,
+      "Total_awt": 4.2,
+      "awt_prev": 0,
+      "awt_perc": 0,
+      "awt_sign": 0,
+      "<5mins": 0,
+      "<10mins": 0,
+      ">10mins": 0
+    }
+  }
+}

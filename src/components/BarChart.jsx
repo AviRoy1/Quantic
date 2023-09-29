@@ -59,7 +59,11 @@ const BarChart = ({ index, dummyData }) => {
           ? dummyData.Entrance.D1Q2
           : index === "D2Q1"
           ? dummyData.Entrance.D2Q1
-          : dummyData.Entrance.D2Q2;
+          : index === "D2Q1"
+          ? dummyData.Entrance.D2Q2
+          : index === "D3Q1"
+          ? dummyData.Entrance.D3Q1
+          : dummyData.Entrance.D3Q2;
       const seriesData = [
         selectedData["<5mins"],
         selectedData["<10mins"],

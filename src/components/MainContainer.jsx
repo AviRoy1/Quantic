@@ -60,6 +60,9 @@ const MainContainer = ({ temp }) => {
     if (newValue === 1) setIndex("D1Q2");
     if (newValue === 2) setIndex("D2Q1");
     if (newValue === 3) setIndex("D2Q2");
+    if (newValue === 4) setIndex("D3Q1");
+    if (newValue === 5) setIndex("D3Q2");
+
     setActiveTab(newValue);
   };
 
@@ -133,6 +136,8 @@ const MainContainer = ({ temp }) => {
                 <Tab label="D1Q2" />
                 <Tab label="D2Q1" />
                 <Tab label="D2Q2" />
+                <Tab label="D3Q1" />
+                <Tab label="D3Q2" />
               </Tabs>
               <style>
                 {`

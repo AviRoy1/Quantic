@@ -50,15 +50,15 @@ const Psha = ({ temp }) => {
     setSelectedDate(event.target.value);
   };
 
-  const [index, setIndex] = useState("D1Q1");
+  const [index, setIndex] = useState("LPSHA1");
   const [activeTab, setActiveTab] = useState(0);
 
   const handleTabChange = (event, newValue) => {
     console.log(newValue);
-    if (newValue === 0) setIndex("D1Q1");
-    if (newValue === 1) setIndex("D1Q2");
-    if (newValue === 2) setIndex("D2Q1");
-    if (newValue === 3) setIndex("D2Q2");
+    if (newValue === 0) setIndex("LPSHA1");
+    if (newValue === 1) setIndex("LPSHA2");
+    if (newValue === 2) setIndex("RPSHA");
+    // if (newValue === 3) setIndex("D2Q2");
     setActiveTab(newValue);
   };
   return (
@@ -125,10 +125,10 @@ const Psha = ({ temp }) => {
                 indicatorColor="primary"
                 textColor="primary"
               >
-                <Tab label="D1Q1" />
-                <Tab label="D1Q2" />
-                <Tab label="D2Q1" />
-                <Tab label="D2Q2" />
+                <Tab label="LPSHA1" />
+                <Tab label="LPSHA2" />
+                <Tab label="RPSHA" />
+                {/* <Tab label="D2Q2" /> */}
               </Tabs>
               <style>
                 {`
