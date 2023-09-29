@@ -7,15 +7,14 @@ import AccessibilityIcon from "@mui/icons-material/Accessibility";
 
 const HeatmapComponent = ({ jsonData }) => {
   const d1GateStatus =
-    jsonData?.Entrance?.D1Q1 === null || jsonData?.Entrance?.D1Q1 === undefined
-      ? 0
-      : jsonData["Entrance"]["D1Q1"]["Total_awt"] +
-        jsonData["Entrance"]["D1Q2"]["Total_awt"];
+    jsonData["Entrance"]["D1Q1"]["Total_awt"] +
+    jsonData["Entrance"]["D1Q2"]["Total_awt"];
   const d2GateStatus =
-    jsonData?.Entrance?.D2Q1 === null || jsonData?.Entrance?.D2Q1 === undefined
-      ? 0
-      : jsonData["Entrance"]["D2Q1"]["Total_awt"] +
-        jsonData["Entrance"]["D2Q2"]["Total_awt"];
+    jsonData["Entrance"]["D2Q1"]["Total_awt"] +
+    jsonData["Entrance"]["D2Q2"]["Total_awt"];
+  const d3GateStatus =
+    jsonData["Entrance"]["D3Q1"]["Total_awt"] +
+    jsonData["Entrance"]["D3Q2"]["Total_awt"];
   const d1q1 =
     jsonData?.Entrance?.D1Q1 === null || jsonData?.Entrance?.D1Q1 === undefined
       ? false
@@ -53,6 +52,9 @@ const HeatmapComponent = ({ jsonData }) => {
         ? 0
         : jsonData["Entrance"]["D2Q1"]["Total_awt"] +
           jsonData["Entrance"]["D2Q2"]["Total_awt"];
+    const d3GateStatus =
+      jsonData["Entrance"]["D3Q1"]["Total_awt"] +
+      jsonData["Entrance"]["D3Q2"]["Total_awt"];
     const d1q1 =
       jsonData?.Entrance?.D1Q1 === null ||
       jsonData?.Entrance?.D1Q1 === undefined
@@ -453,7 +455,12 @@ const HeatmapComponent = ({ jsonData }) => {
                     color: "white",
                   }}
                 >
-                  {d1GateStatus >= d2GateStatus ? "D1" : "D2"}
+                  {d1GateStatus >= d2GateStatus && d1GateStatus >= d3GateStatus
+                    ? "D1"
+                    : d2GateStatus >= d1GateStatus &&
+                      d2GateStatus >= d3GateStatus
+                    ? "D2"
+                    : "D3"}
                 </Typography>
               </Typography>
             </Box>
