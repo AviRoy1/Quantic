@@ -489,6 +489,12 @@ const HeatmapComponent = ({ jsonData }) => {
                   }}
                 >
                   {d1GateStatus < d2GateStatus ? "D1" : "D2"}
+
+                  {d1GateStatus < d2GateStatus && d1GateStatus < d3GateStatus
+                    ? "D1"
+                    : d2GateStatus < d1GateStatus && d2GateStatus < d3GateStatus
+                    ? "D2"
+                    : "D3"}
                 </Typography>
               </Typography>
             </Box>
