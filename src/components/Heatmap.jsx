@@ -15,6 +15,26 @@ const HeatmapComponent = ({ jsonData }) => {
   const d3GateStatus =
     jsonData["Entrance"]["D3Q1"]["Total_awt"] +
     jsonData["Entrance"]["D3Q2"]["Total_awt"];
+  let lowest;
+  if (d1GateStatus < d2GateStatus && d1GateStatus < d3GateStatus) {
+    let a1 = jsonData["Entrance"]["D1Q1"]["Total_awt"];
+    let a2 = jsonData["Entrance"]["D1Q1"]["Total_awt"];
+    if (a1 <= a2) {
+      lowest = `(D1Q1 - ${jsonData["Entrance"]["D1Q1"]["Total_awt"]})`;
+    } else lowest = `(D1Q2 - ${jsonData["Entrance"]["D1Q2"]["Total_awt"]})`;
+  } else if (d2GateStatus < d1GateStatus && d2GateStatus < d3GateStatus) {
+    let a1 = jsonData["Entrance"]["D2Q1"]["Total_awt"];
+    let a2 = jsonData["Entrance"]["D2Q1"]["Total_awt"];
+    if (a1 <= a2) {
+      lowest = `(D2Q1 - ${jsonData["Entrance"]["D2Q1"]["Total_awt"]})`;
+    } else lowest = `(D2Q2 - ${jsonData["Entrance"]["D2Q2"]["Total_awt"]})`;
+  } else {
+    let a1 = jsonData["Entrance"]["D3Q1"]["Total_awt"];
+    let a2 = jsonData["Entrance"]["D3Q1"]["Total_awt"];
+    if (a1 <= a2) {
+      lowest = `(D3Q1 - ${jsonData["Entrance"]["D3Q1"]["Total_awt"]})`;
+    } else lowest = `(D3Q2 - ${jsonData["Entrance"]["D3Q2"]["Total_awt"]})`;
+  }
   const d1q1 =
     jsonData?.Entrance?.D1Q1 === null || jsonData?.Entrance?.D1Q1 === undefined
       ? false
@@ -55,6 +75,25 @@ const HeatmapComponent = ({ jsonData }) => {
     const d3GateStatus =
       jsonData["Entrance"]["D3Q1"]["Total_awt"] +
       jsonData["Entrance"]["D3Q2"]["Total_awt"];
+    if (d1GateStatus < d2GateStatus && d1GateStatus < d3GateStatus) {
+      let a1 = jsonData["Entrance"]["D1Q1"]["Total_awt"];
+      let a2 = jsonData["Entrance"]["D1Q1"]["Total_awt"];
+      if (a1 <= a2) {
+        lowest = `(D1Q1 - ${jsonData["Entrance"]["D1Q1"]["Total_awt"]})`;
+      } else lowest = `(D1Q2 - ${jsonData["Entrance"]["D1Q2"]["Total_awt"]})`;
+    } else if (d2GateStatus < d1GateStatus && d2GateStatus < d3GateStatus) {
+      let a1 = jsonData["Entrance"]["D2Q1"]["Total_awt"];
+      let a2 = jsonData["Entrance"]["D2Q1"]["Total_awt"];
+      if (a1 <= a2) {
+        lowest = `(D2Q1 - ${jsonData["Entrance"]["D2Q1"]["Total_awt"]})`;
+      } else lowest = `(D2Q2 - ${jsonData["Entrance"]["D2Q2"]["Total_awt"]})`;
+    } else {
+      let a1 = jsonData["Entrance"]["D3Q1"]["Total_awt"];
+      let a2 = jsonData["Entrance"]["D3Q1"]["Total_awt"];
+      if (a1 <= a2) {
+        lowest = `(D3Q1 - ${jsonData["Entrance"]["D3Q1"]["Total_awt"]})`;
+      } else lowest = `(D3Q2 - ${jsonData["Entrance"]["D3Q2"]["Total_awt"]})`;
+    }
     const d1q1 =
       jsonData?.Entrance?.D1Q1 === null ||
       jsonData?.Entrance?.D1Q1 === undefined
@@ -456,11 +495,11 @@ const HeatmapComponent = ({ jsonData }) => {
                   }}
                 >
                   {d1GateStatus >= d2GateStatus && d1GateStatus >= d3GateStatus
-                    ? "D1"
+                    ? `D1  `
                     : d2GateStatus >= d1GateStatus &&
                       d2GateStatus >= d3GateStatus
-                    ? "D2"
-                    : "D3"}
+                    ? `D2 `
+                    : `D3 `}
                 </Typography>
               </Typography>
             </Box>
@@ -488,13 +527,11 @@ const HeatmapComponent = ({ jsonData }) => {
                     color: "white",
                   }}
                 >
-                  {d1GateStatus < d2GateStatus ? "D1" : "D2"}
-
                   {d1GateStatus < d2GateStatus && d1GateStatus < d3GateStatus
-                    ? "D1"
+                    ? `D1 ${lowest}`
                     : d2GateStatus < d1GateStatus && d2GateStatus < d3GateStatus
-                    ? "D2"
-                    : "D3"}
+                    ? `D2 ${lowest}`
+                    : `D3  ${lowest}`}
                 </Typography>
               </Typography>
             </Box>

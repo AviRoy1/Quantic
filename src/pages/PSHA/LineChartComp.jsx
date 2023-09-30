@@ -343,10 +343,6 @@ const LineChartComp = ({ index, dummyData }) => {
                     <Typography variant="h5">{maxpax}</Typography>
                   </Typography>
                 )}
-
-                {/* <Typography variant="subtitle2" style={{ marginBottom: "8px" }}>
-                  vs prev = {prv}
-                </Typography> */}
               </Grid>
               <Grid item xs={5}>
                 <Box display="flex" alignItems="center">
