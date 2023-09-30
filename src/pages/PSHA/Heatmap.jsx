@@ -8,6 +8,7 @@ import AccessibilityIcon from "@mui/icons-material/Accessibility";
 
 const HeatmapComponent = ({ jsonData }) => {
   // const xLabels = ["D1Q1", "D1Q2", "D2Q1", "D2Q2"];
+  console.log("helper- ", jsonData);
   const d1q1 = jsonData["PSHA"]["LPSHA1"].manned;
   const d1q2 = jsonData["PSHA"]["LPSHA2"].manned;
   const d2q1 = jsonData["PSHA"]["RPSHA"].manned;

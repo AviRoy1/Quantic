@@ -384,7 +384,7 @@ const LineChartComp = ({ index, dummyData }) => {
             </div>
             <Grid container alignItems="center" marginTop={"10px"}>
               <Grid item xs={5}>
-                {(((maxpax - prv) / maxpax) * 100).toFixed(2) > 0 ? (
+                {maxpax - prv > 0 ? (
                   <Typography ml={1} color="green">
                     <Typography variant="h5">{maxpax}</Typography>
                   </Typography>
@@ -394,25 +394,25 @@ const LineChartComp = ({ index, dummyData }) => {
                   </Typography>
                 )}
 
-                <Typography variant="subtitle2" style={{ marginBottom: "8px" }}>
+                {/* <Typography variant="subtitle2" style={{ marginBottom: "8px" }}>
                   vs prev = {prv}
-                </Typography>
+                </Typography> */}
               </Grid>
               <Grid item xs={5}>
                 <Box display="flex" alignItems="center">
-                  {(((maxpax - prv) / maxpax) * 100).toFixed(2) > 0 ? (
+                  {maxpax - prv > 0 ? (
                     <ArrowUpward color="success" />
                   ) : (
                     <ArrowDownward color="error" />
                   )}
 
-                  {(((maxpax - prv) / maxpax) * 100).toFixed(2) > 0 ? (
+                  {maxpax - prv > 0 ? (
                     <Typography ml={1} color="green" variant="h7">
-                      {(((maxpax - prv) / maxpax) * 100).toFixed(2)}%
+                      {maxpax - prv}
                     </Typography>
                   ) : (
                     <Typography ml={1} variant="h7" color="red">
-                      {(((maxpax - prv) / maxpax) * 100).toFixed(2)}%
+                      {maxpax - prv}
                     </Typography>
                   )}
                 </Box>
@@ -471,7 +471,7 @@ const LineChartComp = ({ index, dummyData }) => {
             </div>
             <Grid container alignItems="center" marginTop={"10px"}>
               <Grid item xs={5}>
-                {(((curAWT - prvAWT) / curAWT) * 100).toFixed(2) < 0 ? (
+                {curAWT - prvAWT < 0 ? (
                   <Typography variant="h5" color="red">
                     {curAWT}mins
                   </Typography>
@@ -481,25 +481,25 @@ const LineChartComp = ({ index, dummyData }) => {
                   </Typography>
                 )}
 
-                <Typography variant="subtitle2" style={{ marginBottom: "8px" }}>
+                {/* <Typography variant="subtitle2" style={{ marginBottom: "8px" }}>
                   vs prev = {prvAWT}
-                </Typography>
+                </Typography> */}
               </Grid>
               <Grid item xs={5}>
                 <Box display="flex" alignItems="center">
-                  {(((curAWT - prvAWT) / curAWT) * 100).toFixed(2) > 0 ? (
+                  {curAWT - prvAWT > 0 ? (
                     <ArrowUpward color="success" />
                   ) : (
                     <ArrowDownward color="error" />
                   )}
 
-                  {(((curAWT - prvAWT) / curAWT) * 100).toFixed(2) < 0 ? (
+                  {curAWT - prvAWT < 0 ? (
                     <Typography variant="h7" color="red">
-                      {(((curAWT - prvAWT) / curAWT) * 100).toFixed(2)}
+                      {curAWT - prvAWT}
                     </Typography>
                   ) : (
                     <Typography variant="h7" color="green">
-                      {(((curAWT - prvAWT) / curAWT) * 100).toFixed(2)}
+                      {curAWT - prvAWT}
                     </Typography>
                   )}
                 </Box>

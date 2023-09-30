@@ -8,6 +8,7 @@ import { TextField, Tabs, Tab, Box, Typography } from "@mui/material";
 import Navbar from "../../components/NavBar";
 
 const Psha = ({ temp }) => {
+  console.log("main-- ", temp);
   const getCurrentDate = () => {
     const currentDate = new Date();
     const year = currentDate.getFullYear();
@@ -40,10 +41,14 @@ const Psha = ({ temp }) => {
 
   const handleDateChange = (event) => {
     setSelectedDate(null);
-    setData(null);
+    // setData(null);
     try {
-      setData(require(`../../${event.target.value}.json`));
-      // console.log("data-  ",data);
+      // const response = require(`../../${selectedDate}.json`);
+      const response = require(`../../${selectedDate}.json`);
+
+      // const jsonData = await response.json();
+      setData("response - ", response);
+      console.log("data-  ", data);
     } catch (error) {
       // console.log(error);
     }

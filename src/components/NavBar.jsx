@@ -75,6 +75,7 @@ const Navbar = () => {
 
     return () => clearInterval(intervalId);
   }, []);
+  console.log(data);
 
   const toggleDrawer = (open) => (event) => {
     if (
@@ -215,7 +216,7 @@ const Navbar = () => {
               style={{
                 height: "20px",
                 width: "20px",
-                color: "green",
+                color: "#C0F6D5",
                 marginLeft: "10px",
               }}
             />
@@ -250,7 +251,7 @@ const Navbar = () => {
               style={{
                 height: "20px",
                 width: "20px",
-                color: "red",
+                color: "#FABFBF",
                 marginLeft: "10px",
               }}
             />
