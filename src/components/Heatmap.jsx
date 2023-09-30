@@ -357,7 +357,7 @@ const HeatmapComponent = ({ jsonData }) => {
         <div
           style={{
             width: "96%",
-            height: "134px",
+            height: "164px",
             fontFamily: "sans-serif",
             marginLeft: "25px",
             marginRight: "auto",
@@ -530,10 +530,54 @@ const HeatmapComponent = ({ jsonData }) => {
                   }}
                 >
                   {d1GateStatus < d2GateStatus && d1GateStatus < d3GateStatus
-                    ? `D1 ${lowest}`
+                    ? `D1`
                     : d2GateStatus < d1GateStatus && d2GateStatus < d3GateStatus
-                    ? `D2 ${lowest}`
-                    : `D3  ${lowest}`}
+                    ? `D2`
+                    : `D3 `}
+                </Typography>
+              </Typography>
+            </Box>
+
+            <Box
+              style={{
+                width: "100%",
+              }}
+            >
+              <Typography
+                variant="h5"
+                gutterBottom
+                style={{ marginLeft: "10px" }}
+              >
+                <Typography
+                  variant="h5"
+                  style={{
+                    width: "95%",
+                    backgroundColor: "#FF7943",
+
+                    marginLeft: "5px",
+                    justifyContent: "center",
+                    marginTop: "10px",
+                    height: "50px",
+                    alignItems: "center",
+                    display: "flex",
+                    color: "white",
+                  }}
+                >
+                  {!(
+                    d1GateStatus < d2GateStatus && d1GateStatus < d3GateStatus
+                  ) &&
+                  !(d1GateStatus > d2GateStatus && d1GateStatus > d3GateStatus)
+                    ? `D1`
+                    : !(
+                        d2GateStatus < d1GateStatus &&
+                        d2GateStatus < d3GateStatus
+                      ) &&
+                      !(
+                        d2GateStatus > d1GateStatus &&
+                        d2GateStatus > d3GateStatus
+                      )
+                    ? `D2`
+                    : `D3 `}
                 </Typography>
               </Typography>
             </Box>
