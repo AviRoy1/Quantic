@@ -516,8 +516,7 @@ const HeatmapComponent = ({ jsonData }) => {
                   variant="h5"
                   style={{
                     width: "95%",
-                    backgroundColor: "#FF7943",
-
+                    backgroundColor: "#F9A81B",
                     marginLeft: "5px",
                     justifyContent: "center",
                     marginTop: "10px",
@@ -562,8 +561,7 @@ const HeatmapComponent = ({ jsonData }) => {
                   variant="h5"
                   style={{
                     width: "95%",
-                    backgroundColor: "#F9A81B",
-
+                    backgroundColor: "#FF7943",
                     marginLeft: "5px",
                     justifyContent: "center",
                     marginTop: "10px",
@@ -608,7 +606,7 @@ const HeatmapComponent = ({ jsonData }) => {
                   style={{
                     height: "20px",
                     width: "20px",
-                    color: "#F9A81B",
+                    color: "#FF7943",
                     marginLeft: "10px",
                   }}
                 />
