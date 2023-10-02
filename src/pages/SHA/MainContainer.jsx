@@ -9,6 +9,7 @@ import Navbar from "../../components/NavBar";
 import data from "../../data.json";
 
 const Sha = ({ temp }) => {
+  console.log("SHAAA-- ", temp);
   const getCurrentDate = () => {
     const currentDate = new Date();
     const year = currentDate.getFullYear();

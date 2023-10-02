@@ -44,11 +44,7 @@ const Psha = ({ temp }) => {
     // setData(null);
     try {
       // const response = require(`../../${selectedDate}.json`);
-      const response = require(`../../${selectedDate}.json`);
-
-      // const jsonData = await response.json();
-      setData("response - ", response);
-      console.log("data-  ", data);
+      setData(require(`../../${event.target.value}.json`));
     } catch (error) {
       // console.log(error);
     }
