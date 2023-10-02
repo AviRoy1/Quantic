@@ -6,7 +6,7 @@ const BarandLineChart = ({ index, dummyData }) => {
   let arr = [];
   let arr2 = [];
   let arr3 = [];
-  console.log("jjj--  ", index, dummyData);
+  // console.log("jjj--  ", index, dummyData);
   const data = Object.values(dummyData?.SHA[index]?.Heatmap).map(
     (item, index) => {
       arr2.push(item.AWT);
